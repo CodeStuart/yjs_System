@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="Author" content="Dreamer-1.">
+
+    <!-- 引入各种CSS样式表 -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/index.css">  <!-- 修改自Bootstrap官方Demon，你可以按自己的喜好制定CSS样式 -->
+    <link rel="stylesheet" href="../static/css/font-change.css">    <!-- 将默认字体从宋体换成微软雅黑（个人比较喜欢微软雅黑，移动端和桌面端显示效果比较接近） -->
+
+    <script type="text/javascript" src="../static/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/ball.js"></script>
+    <script type="text/javascript" src="../static/js/d3.js"></script>
+    <script type="text/javascript" src="../static/js/d3.min.js"></script>
+    <script type="text/javascript" src="../static/js/echarts.min.js"></script>
+
+
+    <title>- 面向金融领域的企业事件演化系统 -</title>
+</head>
+
+<body>
+<!-- 顶部菜单（来自bootstrap官方Demon）==================================== -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" onclick="showAtRight2('../static/entity.html')">面向金融领域的企业事件演化系统</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- 左侧菜单选项========================================= -->
+<div class="container-fluid">
+    <div class="row-fluie">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+
+                <ul id="userMeun2" class="nav nav-header">
+                    <li><a href="#" onclick="showAtRight2('../static/entity.html')"><i class="fa fa-users"></i>
+                        事件抽取</a></li>
+                </ul>
+
+                <ul id="productMeun2" class="nav nav-header">
+                    <li><a href="#" onclick="showAtRight2('../static/relation.html')"><i class="fa fa-list-alt"></i> 
+
+                        因果事件抽取</a>
+                    </li>
+                </ul>
+
+                <ul id="productMeun3" class="nav nav-header">
+                    <li><a href="#" onclick="showAtRight2('../static/event_prediction.html')"><i class="fa fa-list-alt"></i>
+                        事件预测</a>
+                    </li>
+                </ul>
+
+
+                <!--                <ul id="recordMeun2" class="nav nav-header">-->
+                <!--                    <li><a href="#" onclick="showAtRight2('../static/summary.html')"><i class="fa fa-list"></i>-->
+                <!--                        行业应用</a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- 右侧内容展示==================================================   -->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <!--                    <h1 class="page-header"><i class="fa fa-cog fa-spin"></i>&nbsp;控制台<small>&nbsp;&nbsp;&nbsp;欢迎使用XXX后台管理系统</small></h1>-->
+
+    <!-- 载入左侧菜单指向的jsp（或html等）页面内容 -->
+    <div id="content">
+
+        <!--        <div>-->
+
+        <!--            <h4>-->
+        <!--                欢迎使用<strong>面向行业的知识服务系统~</strong></h4>-->
+        <!--            <br>-->
+        <!--            <br>-->
+        <!--            <br>-->
+
+        <!--            <p>输入需要检索的实体:-->
+        <!--                <input type="text" id="summary_sentence">-->
+        <!--                <button type="button" onclick="summary_send()">提交</button>-->
+        <!--                <br>-->
+        <!--                <br>-->
+        <!--                <br>-->
+        <!--                <br>-->
+
+        <!--            <div style="float: left;">-->
+        <!--                实体属性检索结果：-->
+        <!--                <br>-->
+        <!--                <div id="summary_result_ball"></div>-->
+        <!--                <br>-->
+        <!--                实体上下游关系检索结果：-->
+        <!--                <br>-->
+        <!--                <div id="summary_chain_ball"></div>-->
+        <!--                <br>-->
+        <!--            </div>-->
+
+
+        <!--        </div>-->
+        <!--        showAtRight2('entity.html')-->
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    showAtRight2('../static/entity.html');
+
+    function showAtRight(url) {
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "html",
+            success: function (data) {//返回数据根据结果进行相应的处理
+                $("#content").html(data);
+            },
+            error: function () {
+                $("#content").html("获取数据失败！");
+            }
+        });
+    }
+
+    function showAtRight2(url) {
+        $("#content").load(url);
+    }
+
+    function entityfile_send() {
+        var formData = new FormData();
+        formData.append("file_upload",$("#entity_file")[0].files[0]);
+        var data = formData;
+        alert('后端模型启动中，请稍等')
+        $("#entity_table").html("模型预测中，请稍候......")
+        $.ajax({
+            url: "entityfilesend",
+            type: "POST",
+            data : data,
+            dataType: "json",
+            contentType: false, //必须
+            // 告诉jQuery不要去处理发送的数据
+            processData : false,
+            success: function (data) {//返回数据根据结果进行相应的处理
+                var text_area_data = data["text"];
+                var text_entity = data["entity_list"];
+                $("#entity_table").html(text_entity);
+                set_progress_rate(100, 100);
+                //console.log('执行完成);
+            },
+            error: function () {
+                $("#entity_textarea").html("获取数据失败,请重新输入！");
+            }
+        });
+
+    }
+
+    function entityfile_test() {
+        var data = "";
+        $.ajax({
+            url: "entityfiletest",
+            type: "GET",
+            data : data,
+            dataType: "json",
+            contentType: false, //必须
+            // 告诉jQuery不要去处理发送的数据
+            processData : false,
+            success: function (data) {//返回数据根据结果进行相应的处理
+                var text_area_data = data["text"];
+                var text_area_data_ = "";
+                for (var i = 0, l = text_area_data.length; i < l; i++) {
+                    text_area_data_ = text_area_data_ + text_area_data[i];
+                }
+                $("#entity_table").html("数据处理中，请稍候......\n"+text_area_data_);
+            },
+            error: function () {
+                $("#entity_textarea").html("获取数据失败,请重新输入！");
+            }
+        });
+        $.ajax({
+            url: "entityfiletest",
+            type: "POST",
+            data : data,
+            dataType: "json",
+            contentType: false, //必须
+            // 告诉jQuery不要去处理发送的数据
+            processData : false,
+            success: function (data) {//返回数据根据结果进行相应的处理
+                var text_area_data = data["text"];
+                var text_entity = data["entity_list"];
+                $("#entity_table").html(text_entity);
+                set_progress_rate(100, 100);
+                //console.log('执行完成);
+            },
+            error: function () {
+                $("#entity_textarea").html("获取数据失败,请重新输入！");
+            }
+        });
+
+    }
+
+    function entity_send() {
+        var sentence = document.getElementById('entity_text').value;
+        $.ajax({
+            url: "entitysend",
+            type: "POST",
+            data : {sentence:sentence},
+            dataType: "json",
+            success: function (data) {//返回数据根据结果进行相应的处理
+                var text_area_data = data["text"];
+                var text_entity = data["entity_list"];
+                $("#entity_textarea").html(text_entity);
+            },
+            error: function () {
+                $("#entity_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function information_send() {
+        var companyname = $("#companyname").val();
+        var money = $("#money").val();
+        var farenname = $("#farenname").val();
+        var gudongname = $("#gudongname").val();
+        var address1 = $("#address1").val();
+        var entType = $("#entType").find("option:selected").text();
+        var openStatus = $("#openStatus").find("option:selected").text();
+        var scope = $("#scope").val();
+        $.ajax({
+            url: "informationsend",
+            type: "POST",
+            dataType: "json",
+            data: {
+                companyname: companyname,
+                money: money,
+                farenname: farenname,
+                gudongname: gudongname,
+                address1: address1,
+                entType: entType,
+                openStatus: openStatus,
+                scope: scope
+            },
+            success: function (data) {//返回数据根据结果进行相应的处理
+                $("#companyname").val("");
+                $("#money").val("");
+                $("#farenname").val("");
+                $("#gudongname").val("");
+                $("#address1").val("");
+                $("#scope").val("");
+                alert('录入成功！！')
+            },
+            error: function () {
+                alert("获取数据失败,请重新输入！");
+            }
+        });
+
+    }
+
+
+    function gaoguan_send() {
+
+        var gaoguan_sentence = $("#gaoguan_sentence").val();
+        var xingshi = $(':radio[name="names"]:checked').val()
+
+
+        $.ajax({
+            url: "gaoguansend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: gaoguan_sentence, xingshi: xingshi},
+            success: function (data) {//返回数据根据结果进行相应的处理
+
+                var text_area_data = data["text"];
+                var node_json = data["node"];
+                var edge_json = data["edge"];
+
+
+                $("#gaoguan_textarea").html(text_area_data);
+                // var ed = [];
+                $("#relation_ball").empty();
+                createdemo(node_json, edge_json, "relation_ball", 500, 500, 500, 400, 400);
+
+            },
+            error: function () {
+                $("#gaoguan_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function konggu_send() {
+
+        var konggu_sentence = $("#konggu_sentence").val();
+
+        $.ajax({
+            url: "konggusend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: konggu_sentence},
+            success: function (data) {//返回数据根据结果进行相应的处理
+
+                var text_area_data = data["text"];
+                var node_json = data["node"];
+                var edge_json = data["edge"];
+
+
+                $("#konggu_textarea").html(text_area_data);
+                // var ed = [];
+                $("#relation_ball").empty();
+                createdemo(node_json, edge_json, "relation_ball", 500, 500, 500);
+
+            },
+            error: function () {
+                $("#konggu_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function location_send() {
+
+        var location_sentence = $("#location_sentence").val();
+
+        $.ajax({
+            url: "locationsend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: location_sentence},
+            success: function (data) {//返回数据根据结果进行相应的处理
+
+                var text_area_data = data["text"];
+                var node_json = data["node"];
+                var edge_json = data["edge"];
+
+
+                $("#location_textarea").html(text_area_data);
+                // var ed = [];
+                $("#relation_ball").empty();
+                createdemo(node_json, edge_json, "relation_ball", 1500, 1500, 1500);
+
+            },
+            error: function () {
+                $("#location_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function relation_send() {
+
+        var relation_sentence = $("#relation_sentence").val();
+
+        $.ajax({
+            url: "relationsend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: relation_sentence},
+            success: function (data) {//返回数据根据结果进行相应的处理
+
+                var text_area_data = data["text"];
+                var node_json = data["node"];
+                var edge_json = data["edge"];
+
+
+                $("#relation_textarea").html(text_area_data);
+                // var ed = [];
+                $("#relation_ball").empty();
+                createdemo(node_json, edge_json, "relation_ball", 300, 300, 300);
+
+            },
+            error: function () {
+                $("#relation_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function summary_send() {
+        var relation_sentence = $("#summary_sentence").val();
+
+        $.ajax({
+            url: "summarysend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: relation_sentence},
+            success: function (data) {//返回数据根据结果进行相应的处理
+
+
+                var rnode_json = data["rnode"];
+                var redge_json = data["redge"];
+
+                var snode_json = data["snode"];
+                var sedge_json = data["sedge"];
+
+                var cnode_json = data["cnode"];
+                var cedge_json = data["cedge"];
+
+                var summary_text = data["otext"];
+
+                var inodes = data["inodechain"];
+                // alert(summary_text);
+
+
+                // var ed = [];
+                $("#summary_result_ball").empty();
+                createdemo(rnode_json, redge_json, "summary_result_ball", 600, 500);
+                // createdemo(rnode_json, redge_json, "summary_result_ball", , "100%");
+                // alert(snode_json);
+                // alert(sedge_json);
+                $("#summary_summary_ball").empty();
+                createdemo(snode_json, sedge_json, "summary_summary_ball", 500, 500);
+                $("#summary_chain_ball").empty();
+                createdemo(cnode_json, cedge_json, "summary_chain_ball", 800, 600);
+
+                $("#summary_text").html(summary_text);
+                $("#summary_chain_ent").html(inodes);
+
+            },
+            error: function () {
+                // $("#relation_textarea").html("获取数据失败,请重新输入！");
+                alert("获取数据失败,请重新输入！")
+            }
+        });
+    }
+
+    function casuality_send() {
+
+        //var casuality_sentence = $("casuality_sentence").val();
+        var casuality_sentence = document.getElementById('casuality_sentence').value;
+        //alert(casuality_sentence)
+        $.ajax({
+            url: "casualitysend",
+            type: "POST",
+            dataType: "json",
+            data: {sentence: casuality_sentence},
+            success: function (data) {//返回数据根据结果进行相应的处理
+                var text_area_data = data["text"];
+                var cau_node_json = data["cau_nodes"];
+                var cau_edge_json = data["cau_edges"];
+
+                var eff_node_json = data["eff_nodes"];
+                var eff_edge_json = data["eff_edges"];
+
+                var cau_tmp = "";
+                var cau_fre = data["cau_fre"];
+                var eff_fre = data["eff_fre"];
+
+                $("#casuality_textarea").empty();
+                cau_tmp += casuality_sentence+"(因)\n";
+                for (var warn in cau_fre) {
+                        cau_tmp +=cau_fre[warn][0] + ":" +cau_fre[warn][1] + "\n";
+                    }
+
+                cau_tmp += "\n";
+
+                cau_tmp += casuality_sentence+"(果)\n";
+                for (var warn in eff_fre) {
+                        cau_tmp +=eff_fre[warn][0] + ":" +eff_fre[warn][1] + "\n";
+                    }
+
+                $("#casuality_textarea").html(cau_tmp);
+
+
+                $("#cau_ex").empty();
+                $("#eff_ex").empty();
+                createdemo(cau_node_json, cau_edge_json, "cau_ex",  500, 520);
+                createdemo(eff_node_json, eff_edge_json, "eff_ex",  500, 520);
+
+
+            },
+            error: function () {
+                alert('不在搜索范围')
+                $("#relation_textarea").html("获取数据失败,请重新输入！");
+
+            }
+        });
+
+    }
+
+    function set_progress_rate(n, total) {
+        //设置进度
+        var rate = (n / total * 100).toFixed(2);
+        if (n > 0) {
+            $(".progress-bar").attr("aria-valuenow", n);
+            $(".progress-bar").attr("aria-valuemax", total);
+            $(".progress-bar").text(rate + "%");
+            $(".progress-bar").css("width", rate + "%");
+        }
+    }
+
+
+    setInterval(function () {
+        //每1秒请求一次进度
+        $.ajax({
+            url: "select_process",
+            type: "POST",
+            success: function (response) {
+                var n = response["n"];
+                var total = response["total"];
+                set_progress_rate(n, total);
+            }
+        });
+    }, 1000);
+
+    function event_prediction_send(){
+            var tree_echarts_id = 'jttChart';
+            var event = document.getElementById('event_prediction_sentence').value;
+            $.ajax({
+                url: "event_prediction",
+                type: "POST",
+                dataType: "json",
+                data: {event: event},
+                success: function (data) {//返回数据根据结果进行相应的处理
+                var data_json = {
+                    "name": "event1:"+data["event_result"][0][0][3],
+                    "children": [{
+                        "name": "event2:"+data["event_result"][0][1][3],
+                        "children": [{
+                            "name": "event3:"+data["event_result"][0][2][3],
+                            "children": [{
+                                "name": "event4:"+data["event_result"][0][3][3],
+                                "children": [{
+                                    "name": "event5:"+data["event_result"][0][4][3],
+                                    "children": [{
+                                        "name": "event6:"+data["event_result"][0][5][3],
+                                        "children": [{
+                                            "name": "event7:"+data["event_result"][0][6][3],
+                                            "children": [{
+                                                "name": "event8:"+data["event_result"][0][7][3],
+                                                "children": [{
+                                                        "name": "candidate1:"+data["event_result"][1][0][3]
+                                                    },
+                                                    {
+                                                        "name": "candidate2:"+data["event_result"][1][1][3]
+                                                    },
+                                                    {
+                                                        "name": "candidate3:"+data["event_result"][1][2][3]
+                                                    },
+                                                    {
+                                                        "name": "candidate4:"+data["event_result"][1][3][3]
+                                                    },
+                                                    {
+                                                        "name": "candidate5:"+data["event_result"][1][4][3]
+                                                    }
+                                                ]
+                                            }]
+                                        }]
+                                    }]
+                                }]
+                            }]
+                        }]
+                    }]
+                };
+                //change_node_color(data_json,data["event_result"][2]);
+                echarts_tree(tree_echarts_id, data_json,data["event_result"][2]);
+                },
+                error: function () {
+                    $("#relation_textarea").html("获取数据失败,请重新输入！");
+
+                }
+            });
+        };
+
+        function change_node_color(json,index){
+            var redColer={
+                borderColor:"red"
+            };
+            if(json && json.children){
+                for(var i = 0;i<json.children.length;i++){
+                    change_node_color(json.children[i],index);
+                    if(json['children'][i]['name'].search("candidate") != -1 && i==index){
+                        json['children'][i].itemStyle = {color:'#ff0000'};
+                    }
+                }
+            }
+        };
+
+
+        //树形图
+        function echarts_tree(id, data,index) {
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById(id));
+            change_node_color(data,index);
+            console.log(data);
+            myChart.on("click", clickFun);
+            // 指定图表的配置项和数据
+            option = {
+                tooltip: {
+                    trigger: 'item',
+                    triggerOn: 'mousemove'
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        saveAsImage: {show: true}
+                    }
+                },
+                series: [
+                    {
+                        type: 'tree',
+                        data: [data],
+                        top: '1%',
+                        left: '7%',
+                        bottom: '1%',
+                        right: '10%',
+
+                        symbolSize: 20,
+                        label: {
+                            normal: {
+                                position: 'left',
+                                verticalAlign: 'middle',
+                                align: 'right',
+                                fontSize: 20
+                            }
+                        },
+
+                        leaves: {
+                            label: {
+                                normal: {
+                                    position: 'right',
+                                    verticalAlign: 'middle',
+                                    align: 'left'
+                                }
+                            }
+                        },
+                        initialTreeDepth:4,
+                        expandAndCollapse: true,
+                        animationDuration: 700,
+                        animationDurationUpdate: 750
+                    }
+                ]
+            }
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+
+function load(name) {
+    let xhr = new XMLHttpRequest(),
+        okStatus = document.location.protocol === "file:" ? 0 : 200;
+    xhr.open('GET', name, false);
+    xhr.overrideMimeType("text/html;charset=utf-8");//默认为utf-8
+    return xhr.status === okStatus ? xhr.responseText : null;
+}
+
+
+function clickFun(param) {
+    if (typeof param.seriesIndex == 'undefined') {
+        return;
+    }
+    if (param.type == 'click') {
+            var event = document.getElementById('event_prediction_sentence').value;
+            $.ajax({
+                url: "event_prediction",
+                type: "POST",
+                dataType: "json",
+                data: {event: event},
+                success: function (data){
+                    var tmp = param.name.split(":")[0]
+                    var index = tmp.charAt(tmp.length-1)
+                    $("#event_detail").html(tmp+"    公司:"+data["event_result"][0][index-1][4]+
+                    "   事件类型:"+data["event_result"][0][index-1][3]+
+                    "   触发词:"+data["event_result"][0][index-1][0]
+                    );
+                },
+                error: function () {
+                    $("#relation_textarea").html("获取数据失败,请重新输入！");
+
+                }
+            });
+    }
+}
+
+</script>
+
+</body>
+</html>

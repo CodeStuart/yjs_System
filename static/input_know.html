@@ -1,0 +1,42 @@
+<div>
+
+
+    <p>企 业 名 <input type="text" id="companyname"></p>
+    <p>注册资本 <input type="text" id="money"></p>
+    <p>企业法人 <input type="text" id="farenname"></p>
+    <p>股&nbsp&nbsp东 <input type="text" id="gudongname"></p>
+    <p>详细地址 <input type="text" id="address1" placeholder="上海市青浦区"></p>
+
+    <p>公司类型
+        <select id="entType">
+            <optgroup label="公司类型">
+                <option value="beijing">股份有限公司(中外合资、未上市)</option>
+                <option value="hebei">其他股份有限公司(非上市)</option>
+                <option value="henan" selected="selected">有限责任公司(中外合资)</option>
+                <option value="shanxi">有限责任公司(自然人投资或控股的法人独资)</option>
+                <option value="shanxi">有限责任公司(自然人投资或控股)</option>
+                <option value="shanxi">其他有限责任公司</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>经营状态
+        <select id="openStatus">
+            <optgroup label="经营状态">
+                <option value="kaiye">&nbsp开业&nbsp</option>
+                <option value="qianchu">&nbsp迁出&nbsp</option>
+                <option value="daobi">&nbsp 倒闭 &nbsp</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>经营范围 &nbsp <textarea id="scope" rows="3" cols="35"></textarea></p>
+
+    <p><input type="reset" name="button" id="button" value="重置"> &nbsp
+        <button type="button" onclick="information_send()">提交信息</button>
+    </p>
+
+</div>
+
+
+

@@ -1,0 +1,31 @@
+<div>
+	<div style="text-align:center">
+		<p style="font-size:20px">输入公司:
+			<input type="text" id="event_prediction_sentence"></input>
+			<button type="button" onclick="event_prediction_send()" style="text-align:center">提交</button>
+            <br>
+            <span>
+                    推荐搜索:
+            </span>
+            <a href="#" onclick="document.getElementById('event_prediction_sentence').value = '西泵股份'">西泵股份</a>
+            <a href="#" onclick="document.getElementById('event_prediction_sentence').value = '神雾节能'">神雾节能</a>
+            <a href="#" onclick="document.getElementById('event_prediction_sentence').value = '葵花药业'">葵花药业</a>
+		</p>
+	</div>
+
+   	<div style="width: 1200px;margin-left: 5%; background-color: white">
+                <br>
+                <h2 style="text-align:center;">事件链及预测事件：</h2>
+                <br>
+                <br>
+                <br>
+                <blockquote  style="height: 600px;">
+                    <div id="jttChart" style="width: 100%;height:100%;"></div>
+                </blockquote>
+    </div>
+        <br>
+        <p>
+            事件详情：
+            <div id="event_detail"></div>
+        </p>
+</div>

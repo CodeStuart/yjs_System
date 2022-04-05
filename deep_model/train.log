@@ -1,0 +1,1714 @@
+2020-11-17 14:47:52,560 - log\train.log - INFO - num_tags       :	8
+2020-11-17 14:47:52,561 - log\train.log - INFO - lstm_dim       :	200
+2020-11-17 14:47:52,562 - log\train.log - INFO - batch_size     :	8
+2020-11-17 14:47:52,562 - log\train.log - INFO - max_seq_len    :	100
+2020-11-17 14:47:52,563 - log\train.log - INFO - clip           :	5.0
+2020-11-17 14:47:52,563 - log\train.log - INFO - dropout_keep   :	0.5
+2020-11-17 14:47:52,563 - log\train.log - INFO - optimizer      :	adam
+2020-11-17 14:47:52,564 - log\train.log - INFO - lr             :	0.001
+2020-11-17 14:47:52,564 - log\train.log - INFO - tag_schema     :	iob
+2020-11-17 14:47:52,565 - log\train.log - INFO - zeros          :	False
+2020-11-17 14:47:52,565 - log\train.log - INFO - lower          :	True
+2020-11-17 14:47:57,388 - log\train.log - INFO - Created model with fresh parameters.
+2020-11-17 14:47:59,126 - log\train.log - INFO - start training
+2020-11-17 14:50:45,668 - log\train.log - INFO - epoch:0,iteration:1 step:100/238, NER loss:35.283348
+2020-11-17 14:53:32,254 - log\train.log - INFO - epoch:0,iteration:1 step:200/238, NER loss:20.947817
+2020-11-17 14:54:36,086 - log\train.log - INFO - evaluate:dev
+2020-11-17 14:55:12,623 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 1024 phrases; correct: 546.
+
+2020-11-17 14:55:12,625 - log\train.log - INFO - accuracy:  89.59%; precision:  53.32%; recall:  59.48%; FB1:  56.23
+
+2020-11-17 14:55:12,626 - log\train.log - INFO -  : accuracy:  89.83%; precision:  44.51%; recall:  49.89%; FB1:  47.05  492
+
+2020-11-17 14:55:12,627 - log\train.log - INFO - Cause: accuracy:  49.70%; precision:  57.28%; recall:  77.17%; FB1:  65.75  419
+
+2020-11-17 14:55:12,628 - log\train.log - INFO - Effect: accuracy:  47.03%; precision:  76.99%; recall:  51.79%; FB1:  61.92  113
+
+2020-11-17 14:55:13,009 - log\train.log - INFO - new best dev f1 score:56.230
+2020-11-17 14:55:15,118 - log\train.log - INFO - model saved
+2020-11-17 14:55:15,119 - log\train.log - INFO - evaluate:test
+2020-11-17 14:55:54,186 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1250 phrases; correct: 605.
+
+2020-11-17 14:55:54,187 - log\train.log - INFO - accuracy:  89.17%; precision:  48.40%; recall:  58.12%; FB1:  52.82
+
+2020-11-17 14:55:54,188 - log\train.log - INFO -  : accuracy:  90.22%; precision:  41.72%; recall:  50.40%; FB1:  45.65  604
+
+2020-11-17 14:55:54,189 - log\train.log - INFO - Cause: accuracy:  44.52%; precision:  50.89%; recall:  74.14%; FB1:  60.35  507
+
+2020-11-17 14:55:54,190 - log\train.log - INFO - Effect: accuracy:  40.83%; precision:  68.35%; recall:  49.22%; FB1:  57.23  139
+
+2020-11-17 14:55:54,584 - log\train.log - INFO - new best test f1 score:52.820
+2020-11-17 14:55:54,585 - log\train.log - INFO - end 0 epoch
+2020-11-17 14:57:43,963 - log\train.log - INFO - epoch:1,iteration:2 step:62/238, NER loss:16.771568
+2020-11-17 15:00:28,505 - log\train.log - INFO - epoch:1,iteration:2 step:162/238, NER loss:16.483522
+2020-11-17 15:02:30,401 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:03:02,059 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 837 phrases; correct: 564.
+
+2020-11-17 15:03:02,060 - log\train.log - INFO - accuracy:  92.30%; precision:  67.38%; recall:  61.44%; FB1:  64.27
+
+2020-11-17 15:03:02,061 - log\train.log - INFO -  : accuracy:  92.02%; precision:  56.33%; recall:  51.71%; FB1:  53.92  403
+
+2020-11-17 15:03:02,062 - log\train.log - INFO - Cause: accuracy:  58.79%; precision:  77.90%; recall:  69.13%; FB1:  73.25  276
+
+2020-11-17 15:03:02,063 - log\train.log - INFO - Effect: accuracy:  63.23%; precision:  77.22%; recall:  72.62%; FB1:  74.85  158
+
+2020-11-17 15:03:02,335 - log\train.log - INFO - new best dev f1 score:64.270
+2020-11-17 15:03:04,718 - log\train.log - INFO - model saved
+2020-11-17 15:03:04,719 - log\train.log - INFO - evaluate:test
+2020-11-17 15:03:40,581 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 946 phrases; correct: 608.
+
+2020-11-17 15:03:40,582 - log\train.log - INFO - accuracy:  91.47%; precision:  64.27%; recall:  58.41%; FB1:  61.20
+
+2020-11-17 15:03:40,583 - log\train.log - INFO -  : accuracy:  92.52%; precision:  54.47%; recall:  50.00%; FB1:  52.14  459
+
+2020-11-17 15:03:40,584 - log\train.log - INFO - Cause: accuracy:  57.37%; precision:  74.84%; recall:  69.25%; FB1:  71.94  322
+
+2020-11-17 15:03:40,585 - log\train.log - INFO - Effect: accuracy:  49.80%; precision:  70.91%; recall:  60.62%; FB1:  65.36  165
+
+2020-11-17 15:03:40,847 - log\train.log - INFO - new best test f1 score:61.200
+2020-11-17 15:03:40,848 - log\train.log - INFO - end 1 epoch
+2020-11-17 15:04:18,274 - log\train.log - INFO - epoch:2,iteration:3 step:24/238, NER loss:14.742775
+2020-11-17 15:06:58,708 - log\train.log - INFO - epoch:2,iteration:3 step:124/238, NER loss:14.372911
+2020-11-17 15:09:41,325 - log\train.log - INFO - epoch:2,iteration:3 step:224/238, NER loss:12.783400
+2020-11-17 15:10:05,311 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:10:39,925 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 810 phrases; correct: 565.
+
+2020-11-17 15:10:39,926 - log\train.log - INFO - accuracy:  93.19%; precision:  69.75%; recall:  61.55%; FB1:  65.39
+
+2020-11-17 15:10:39,926 - log\train.log - INFO -  : accuracy:  92.49%; precision:  59.23%; recall:  52.62%; FB1:  55.73  390
+
+2020-11-17 15:10:39,927 - log\train.log - INFO - Cause: accuracy:  59.57%; precision:  81.82%; recall:  66.56%; FB1:  73.40  253
+
+2020-11-17 15:10:39,928 - log\train.log - INFO - Effect: accuracy:  64.16%; precision:  76.05%; recall:  75.60%; FB1:  75.82  167
+
+2020-11-17 15:10:40,192 - log\train.log - INFO - new best dev f1 score:65.390
+2020-11-17 15:10:42,005 - log\train.log - INFO - model saved
+2020-11-17 15:10:42,006 - log\train.log - INFO - evaluate:test
+2020-11-17 15:11:19,378 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 874 phrases; correct: 589.
+
+2020-11-17 15:11:19,380 - log\train.log - INFO - accuracy:  91.95%; precision:  67.39%; recall:  56.58%; FB1:  61.51
+
+2020-11-17 15:11:19,381 - log\train.log - INFO -  : accuracy:  92.89%; precision:  57.31%; recall:  48.60%; FB1:  52.60  424
+
+2020-11-17 15:11:19,382 - log\train.log - INFO - Cause: accuracy:  57.14%; precision:  80.65%; recall:  64.66%; FB1:  71.77  279
+
+2020-11-17 15:11:19,383 - log\train.log - INFO - Effect: accuracy:  52.16%; precision:  70.76%; recall:  62.69%; FB1:  66.48  171
+
+2020-11-17 15:11:19,643 - log\train.log - INFO - new best test f1 score:61.510
+2020-11-17 15:11:19,643 - log\train.log - INFO - end 2 epoch
+2020-11-17 15:13:39,479 - log\train.log - INFO - epoch:3,iteration:4 step:86/238, NER loss:12.364712
+2020-11-17 15:16:20,712 - log\train.log - INFO - epoch:3,iteration:4 step:186/238, NER loss:12.112186
+2020-11-17 15:17:40,836 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:18:14,804 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 1007 phrases; correct: 620.
+
+2020-11-17 15:18:14,806 - log\train.log - INFO - accuracy:  92.77%; precision:  61.57%; recall:  67.54%; FB1:  64.42
+
+2020-11-17 15:18:14,807 - log\train.log - INFO -  : accuracy:  91.62%; precision:  53.18%; recall:  59.00%; FB1:  55.94  487
+
+2020-11-17 15:18:14,808 - log\train.log - INFO - Cause: accuracy:  57.87%; precision:  69.37%; recall:  74.28%; FB1:  71.74  333
+
+2020-11-17 15:18:14,808 - log\train.log - INFO - Effect: accuracy:  61.54%; precision:  69.52%; recall:  77.38%; FB1:  73.24  187
+
+2020-11-17 15:18:14,809 - log\train.log - INFO - evaluate:test
+2020-11-17 15:18:53,311 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1133 phrases; correct: 686.
+
+2020-11-17 15:18:53,312 - log\train.log - INFO - accuracy:  92.09%; precision:  60.55%; recall:  65.90%; FB1:  63.11
+
+2020-11-17 15:18:53,313 - log\train.log - INFO -  : accuracy:  92.25%; precision:  52.19%; recall:  57.20%; FB1:  54.58  548
+
+2020-11-17 15:18:53,314 - log\train.log - INFO - Cause: accuracy:  59.83%; precision:  69.95%; recall:  77.59%; FB1:  73.57  386
+
+2020-11-17 15:18:53,315 - log\train.log - INFO - Effect: accuracy:  51.82%; precision:  65.33%; recall:  67.36%; FB1:  66.33  199
+
+2020-11-17 15:18:53,580 - log\train.log - INFO - new best test f1 score:63.110
+2020-11-17 15:18:53,581 - log\train.log - INFO - end 3 epoch
+2020-11-17 15:20:09,867 - log\train.log - INFO - epoch:4,iteration:5 step:48/238, NER loss:12.242840
+2020-11-17 15:23:04,955 - log\train.log - INFO - epoch:4,iteration:5 step:148/238, NER loss:11.164872
+2020-11-17 15:25:48,693 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:26:25,099 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 830 phrases; correct: 579.
+
+2020-11-17 15:26:25,100 - log\train.log - INFO - accuracy:  93.46%; precision:  69.76%; recall:  63.07%; FB1:  66.25
+
+2020-11-17 15:26:25,100 - log\train.log - INFO -  : accuracy:  92.71%; precision:  60.25%; recall:  54.90%; FB1:  57.45  400
+
+2020-11-17 15:26:25,101 - log\train.log - INFO - Cause: accuracy:  59.35%; precision:  80.84%; recall:  67.85%; FB1:  73.78  261
+
+2020-11-17 15:26:25,102 - log\train.log - INFO - Effect: accuracy:  63.11%; precision:  75.15%; recall:  75.60%; FB1:  75.37  169
+
+2020-11-17 15:26:25,347 - log\train.log - INFO - new best dev f1 score:66.250
+2020-11-17 15:26:27,125 - log\train.log - INFO - model saved
+2020-11-17 15:26:27,125 - log\train.log - INFO - evaluate:test
+2020-11-17 15:27:10,808 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 916 phrases; correct: 646.
+
+2020-11-17 15:27:10,810 - log\train.log - INFO - accuracy:  93.45%; precision:  70.52%; recall:  62.06%; FB1:  66.02
+
+2020-11-17 15:27:10,811 - log\train.log - INFO -  : accuracy:  93.38%; precision:  60.14%; recall:  53.40%; FB1:  56.57  444
+
+2020-11-17 15:27:10,811 - log\train.log - INFO - Cause: accuracy:  60.89%; precision:  83.22%; recall:  68.39%; FB1:  75.08  286
+
+2020-11-17 15:27:10,813 - log\train.log - INFO - Effect: accuracy:  62.11%; precision:  75.81%; recall:  73.06%; FB1:  74.41  186
+
+2020-11-17 15:27:11,063 - log\train.log - INFO - new best test f1 score:66.020
+2020-11-17 15:27:11,063 - log\train.log - INFO - end 4 epoch
+2020-11-17 15:27:29,745 - log\train.log - INFO - epoch:5,iteration:6 step:10/238, NER loss:10.368104
+2020-11-17 15:30:42,397 - log\train.log - INFO - epoch:5,iteration:6 step:110/238, NER loss:10.133796
+2020-11-17 15:33:37,511 - log\train.log - INFO - epoch:5,iteration:6 step:210/238, NER loss:10.375647
+2020-11-17 15:34:25,778 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:35:01,261 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 821 phrases; correct: 589.
+
+2020-11-17 15:35:01,262 - log\train.log - INFO - accuracy:  93.55%; precision:  71.74%; recall:  64.16%; FB1:  67.74
+
+2020-11-17 15:35:01,263 - log\train.log - INFO -  : accuracy:  92.98%; precision:  62.28%; recall:  56.04%; FB1:  58.99  395
+
+2020-11-17 15:35:01,265 - log\train.log - INFO - Cause: accuracy:  63.59%; precision:  84.44%; recall:  69.77%; FB1:  76.41  257
+
+2020-11-17 15:35:01,265 - log\train.log - INFO - Effect: accuracy:  62.88%; precision:  74.56%; recall:  75.00%; FB1:  74.78  169
+
+2020-11-17 15:35:01,519 - log\train.log - INFO - new best dev f1 score:67.740
+2020-11-17 15:35:03,380 - log\train.log - INFO - model saved
+2020-11-17 15:35:03,380 - log\train.log - INFO - evaluate:test
+2020-11-17 15:35:44,856 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 929 phrases; correct: 647.
+
+2020-11-17 15:35:44,858 - log\train.log - INFO - accuracy:  93.32%; precision:  69.64%; recall:  62.15%; FB1:  65.69
+
+2020-11-17 15:35:44,858 - log\train.log - INFO -  : accuracy:  93.22%; precision:  58.89%; recall:  53.00%; FB1:  55.79  450
+
+2020-11-17 15:35:44,859 - log\train.log - INFO - Cause: accuracy:  62.74%; precision:  81.64%; recall:  71.55%; FB1:  76.26  305
+
+2020-11-17 15:35:44,860 - log\train.log - INFO - Effect: accuracy:  58.44%; precision:  76.44%; recall:  68.91%; FB1:  72.48  174
+
+2020-11-17 15:35:44,861 - log\train.log - INFO - end 5 epoch
+2020-11-17 15:37:50,498 - log\train.log - INFO - epoch:6,iteration:7 step:72/238, NER loss: 9.062527
+2020-11-17 15:40:55,511 - log\train.log - INFO - epoch:6,iteration:7 step:172/238, NER loss: 9.463004
+2020-11-17 15:42:53,075 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:43:28,106 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 965 phrases; correct: 617.
+
+2020-11-17 15:43:28,108 - log\train.log - INFO - accuracy:  93.38%; precision:  63.94%; recall:  67.21%; FB1:  65.53
+
+2020-11-17 15:43:28,108 - log\train.log - INFO -  : accuracy:  91.74%; precision:  53.63%; recall:  57.18%; FB1:  55.35  468
+
+2020-11-17 15:43:28,109 - log\train.log - INFO - Cause: accuracy:  60.05%; precision:  69.83%; recall:  78.14%; FB1:  73.75  348
+
+2020-11-17 15:43:28,109 - log\train.log - INFO - Effect: accuracy:  66.35%; precision:  82.55%; recall:  73.21%; FB1:  77.60  149
+
+2020-11-17 15:43:28,111 - log\train.log - INFO - evaluate:test
+2020-11-17 15:44:10,666 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1098 phrases; correct: 690.
+
+2020-11-17 15:44:10,667 - log\train.log - INFO - accuracy:  93.02%; precision:  62.84%; recall:  66.28%; FB1:  64.52
+
+2020-11-17 15:44:10,667 - log\train.log - INFO -  : accuracy:  92.52%; precision:  53.47%; recall:  57.00%; FB1:  55.18  533
+
+2020-11-17 15:44:10,668 - log\train.log - INFO - Cause: accuracy:  60.61%; precision:  69.23%; recall:  80.17%; FB1:  74.30  403
+
+2020-11-17 15:44:10,668 - log\train.log - INFO - Effect: accuracy:  57.26%; precision:  77.78%; recall:  65.28%; FB1:  70.99  162
+
+2020-11-17 15:44:10,670 - log\train.log - INFO - end 6 epoch
+2020-11-17 15:45:09,100 - log\train.log - INFO - epoch:7,iteration:8 step:34/238, NER loss: 9.334164
+2020-11-17 15:48:04,799 - log\train.log - INFO - epoch:7,iteration:8 step:134/238, NER loss: 8.686406
+2020-11-17 15:50:56,267 - log\train.log - INFO - epoch:7,iteration:8 step:234/238, NER loss: 9.094270
+2020-11-17 15:51:02,822 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:51:36,501 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 952 phrases; correct: 631.
+
+2020-11-17 15:51:36,501 - log\train.log - INFO - accuracy:  93.54%; precision:  66.28%; recall:  68.74%; FB1:  67.49
+
+2020-11-17 15:51:36,501 - log\train.log - INFO -  : accuracy:  92.29%; precision:  56.86%; recall:  59.45%; FB1:  58.13  459
+
+2020-11-17 15:51:36,501 - log\train.log - INFO - Cause: accuracy:  61.05%; precision:  72.21%; recall:  76.85%; FB1:  74.45  331
+
+2020-11-17 15:51:36,501 - log\train.log - INFO - Effect: accuracy:  68.37%; precision:  80.86%; recall:  77.98%; FB1:  79.39  162
+
+2020-11-17 15:51:36,501 - log\train.log - INFO - evaluate:test
+2020-11-17 15:52:18,064 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1105 phrases; correct: 695.
+
+2020-11-17 15:52:18,064 - log\train.log - INFO - accuracy:  93.14%; precision:  62.90%; recall:  66.76%; FB1:  64.77
+
+2020-11-17 15:52:18,072 - log\train.log - INFO -  : accuracy:  92.52%; precision:  53.47%; recall:  57.00%; FB1:  55.18  533
+
+2020-11-17 15:52:18,072 - log\train.log - INFO - Cause: accuracy:  61.59%; precision:  71.24%; recall:  79.02%; FB1:  74.93  386
+
+2020-11-17 15:52:18,072 - log\train.log - INFO - Effect: accuracy:  57.59%; precision:  72.58%; recall:  69.95%; FB1:  71.24  186
+
+2020-11-17 15:52:18,072 - log\train.log - INFO - end 7 epoch
+2020-11-17 15:55:00,531 - log\train.log - INFO - epoch:8,iteration:9 step:96/238, NER loss: 7.765106
+2020-11-17 15:57:49,883 - log\train.log - INFO - epoch:8,iteration:9 step:196/238, NER loss: 8.870775
+2020-11-17 15:58:59,108 - log\train.log - INFO - evaluate:dev
+2020-11-17 15:59:32,229 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 869 phrases; correct: 615.
+
+2020-11-17 15:59:32,237 - log\train.log - INFO - accuracy:  94.57%; precision:  70.77%; recall:  66.99%; FB1:  68.83
+
+2020-11-17 15:59:32,237 - log\train.log - INFO -  : accuracy:  92.87%; precision:  60.57%; recall:  58.09%; FB1:  59.30  421
+
+2020-11-17 15:59:32,237 - log\train.log - INFO - Cause: accuracy:  63.85%; precision:  79.31%; recall:  73.95%; FB1:  76.54  290
+
+2020-11-17 15:59:32,237 - log\train.log - INFO - Effect: accuracy:  69.59%; precision:  82.28%; recall:  77.38%; FB1:  79.75  158
+
+2020-11-17 15:59:32,485 - log\train.log - INFO - new best dev f1 score:68.830
+2020-11-17 15:59:34,362 - log\train.log - INFO - model saved
+2020-11-17 15:59:34,362 - log\train.log - INFO - evaluate:test
+2020-11-17 16:00:13,251 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1030 phrases; correct: 670.
+
+2020-11-17 16:00:13,251 - log\train.log - INFO - accuracy:  93.51%; precision:  65.05%; recall:  64.36%; FB1:  64.70
+
+2020-11-17 16:00:13,251 - log\train.log - INFO -  : accuracy:  92.82%; precision:  55.42%; recall:  55.20%; FB1:  55.31  498
+
+2020-11-17 16:00:13,251 - log\train.log - INFO - Cause: accuracy:  58.92%; precision:  71.63%; recall:  74.71%; FB1:  73.14  363
+
+2020-11-17 16:00:13,251 - log\train.log - INFO - Effect: accuracy:  61.48%; precision:  79.29%; recall:  69.43%; FB1:  74.03  169
+
+2020-11-17 16:00:13,251 - log\train.log - INFO - end 8 epoch
+2020-11-17 16:01:50,358 - log\train.log - INFO - epoch:9,iteration:10 step:58/238, NER loss: 7.455202
+2020-11-17 16:04:39,211 - log\train.log - INFO - epoch:9,iteration:10 step:158/238, NER loss: 7.069026
+2020-11-17 16:06:54,581 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:07:30,033 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 838 phrases; correct: 604.
+
+2020-11-17 16:07:30,033 - log\train.log - INFO - accuracy:  94.77%; precision:  72.08%; recall:  65.80%; FB1:  68.79
+
+2020-11-17 16:07:30,033 - log\train.log - INFO -  : accuracy:  92.83%; precision:  60.64%; recall:  55.81%; FB1:  58.13  404
+
+2020-11-17 16:07:30,033 - log\train.log - INFO - Cause: accuracy:  63.32%; precision:  82.09%; recall:  70.74%; FB1:  75.99  268
+
+2020-11-17 16:07:30,033 - log\train.log - INFO - Effect: accuracy:  73.95%; precision:  83.73%; recall:  82.74%; FB1:  83.23  166
+
+2020-11-17 16:07:30,033 - log\train.log - INFO - evaluate:test
+2020-11-17 16:08:11,273 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 971 phrases; correct: 650.
+
+2020-11-17 16:08:11,273 - log\train.log - INFO - accuracy:  93.73%; precision:  66.94%; recall:  62.44%; FB1:  64.61
+
+2020-11-17 16:08:11,273 - log\train.log - INFO -  : accuracy:  92.92%; precision:  56.24%; recall:  53.20%; FB1:  54.68  473
+
+2020-11-17 16:08:11,273 - log\train.log - INFO - Cause: accuracy:  60.00%; precision:  78.03%; recall:  70.40%; FB1:  74.02  314
+
+2020-11-17 16:08:11,281 - log\train.log - INFO - Effect: accuracy:  62.07%; precision:  75.54%; recall:  72.02%; FB1:  73.74  184
+
+2020-11-17 16:08:11,281 - log\train.log - INFO - end 9 epoch
+2020-11-17 16:08:46,227 - log\train.log - INFO - epoch:10,iteration:11 step:20/238, NER loss: 8.035272
+2020-11-17 16:11:39,770 - log\train.log - INFO - epoch:10,iteration:11 step:120/238, NER loss: 7.148718
+2020-11-17 16:14:34,025 - log\train.log - INFO - epoch:10,iteration:11 step:220/238, NER loss: 7.272249
+2020-11-17 16:15:05,840 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:15:41,864 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 807 phrases; correct: 601.
+
+2020-11-17 16:15:41,864 - log\train.log - INFO - accuracy:  94.81%; precision:  74.47%; recall:  65.47%; FB1:  69.68
+
+2020-11-17 16:15:41,864 - log\train.log - INFO -  : accuracy:  93.31%; precision:  64.18%; recall:  56.72%; FB1:  60.22  388
+
+2020-11-17 16:15:41,864 - log\train.log - INFO - Cause: accuracy:  64.72%; precision:  82.01%; recall:  73.31%; FB1:  77.42  278
+
+2020-11-17 16:15:41,864 - log\train.log - INFO - Effect: accuracy:  69.65%; precision:  87.94%; recall:  73.81%; FB1:  80.26  141
+
+2020-11-17 16:15:42,144 - log\train.log - INFO - new best dev f1 score:69.680
+2020-11-17 16:15:44,477 - log\train.log - INFO - model saved
+2020-11-17 16:15:44,485 - log\train.log - INFO - evaluate:test
+2020-11-17 16:16:24,008 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 968 phrases; correct: 672.
+
+2020-11-17 16:16:24,008 - log\train.log - INFO - accuracy:  94.17%; precision:  69.42%; recall:  64.55%; FB1:  66.90
+
+2020-11-17 16:16:24,008 - log\train.log - INFO -  : accuracy:  93.19%; precision:  58.09%; recall:  54.60%; FB1:  56.29  470
+
+2020-11-17 16:16:24,008 - log\train.log - INFO - Cause: accuracy:  64.00%; precision:  80.19%; recall:  74.43%; FB1:  77.20  323
+
+2020-11-17 16:16:24,008 - log\train.log - INFO - Effect: accuracy:  65.08%; precision:  80.00%; recall:  72.54%; FB1:  76.09  175
+
+2020-11-17 16:16:24,262 - log\train.log - INFO - new best test f1 score:66.900
+2020-11-17 16:16:24,262 - log\train.log - INFO - end 10 epoch
+2020-11-17 16:18:43,016 - log\train.log - INFO - epoch:11,iteration:12 step:82/238, NER loss: 7.504520
+2020-11-17 16:21:35,616 - log\train.log - INFO - epoch:11,iteration:12 step:182/238, NER loss: 6.626404
+2020-11-17 16:23:13,403 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:23:51,310 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 827 phrases; correct: 615.
+
+2020-11-17 16:23:51,310 - log\train.log - INFO - accuracy:  94.95%; precision:  74.37%; recall:  66.99%; FB1:  70.49
+
+2020-11-17 16:23:51,310 - log\train.log - INFO -  : accuracy:  93.20%; precision:  63.16%; recall:  57.40%; FB1:  60.14  399
+
+2020-11-17 16:23:51,310 - log\train.log - INFO - Cause: accuracy:  68.29%; precision:  84.64%; recall:  76.21%; FB1:  80.20  280
+
+2020-11-17 16:23:51,318 - log\train.log - INFO - Effect: accuracy:  69.52%; precision:  85.14%; recall:  75.00%; FB1:  79.75  148
+
+2020-11-17 16:23:51,607 - log\train.log - INFO - new best dev f1 score:70.490
+2020-11-17 16:23:53,579 - log\train.log - INFO - model saved
+2020-11-17 16:23:53,579 - log\train.log - INFO - evaluate:test
+2020-11-17 16:24:36,180 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1005 phrases; correct: 678.
+
+2020-11-17 16:24:36,188 - log\train.log - INFO - accuracy:  94.09%; precision:  67.46%; recall:  65.13%; FB1:  66.28
+
+2020-11-17 16:24:36,188 - log\train.log - INFO -  : accuracy:  93.09%; precision:  57.20%; recall:  55.60%; FB1:  56.39  486
+
+2020-11-17 16:24:36,188 - log\train.log - INFO - Cause: accuracy:  62.21%; precision:  78.05%; recall:  73.56%; FB1:  75.74  328
+
+2020-11-17 16:24:36,188 - log\train.log - INFO - Effect: accuracy:  63.08%; precision:  75.39%; recall:  74.61%; FB1:  75.00  191
+
+2020-11-17 16:24:36,188 - log\train.log - INFO - end 11 epoch
+2020-11-17 16:25:55,349 - log\train.log - INFO - epoch:12,iteration:13 step:44/238, NER loss: 6.720260
+2020-11-17 16:28:56,135 - log\train.log - INFO - epoch:12,iteration:13 step:144/238, NER loss: 6.494709
+2020-11-17 16:31:42,944 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:32:17,336 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 901 phrases; correct: 652.
+
+2020-11-17 16:32:17,336 - log\train.log - INFO - accuracy:  94.74%; precision:  72.36%; recall:  71.02%; FB1:  71.69
+
+2020-11-17 16:32:17,336 - log\train.log - INFO -  : accuracy:  93.24%; precision:  62.59%; recall:  61.73%; FB1:  62.16  433
+
+2020-11-17 16:32:17,336 - log\train.log - INFO - Cause: accuracy:  67.77%; precision:  79.87%; recall:  79.10%; FB1:  79.48  308
+
+2020-11-17 16:32:17,336 - log\train.log - INFO - Effect: accuracy:  72.12%; precision:  84.38%; recall:  80.36%; FB1:  82.32  160
+
+2020-11-17 16:32:17,577 - log\train.log - INFO - new best dev f1 score:71.690
+2020-11-17 16:32:19,555 - log\train.log - INFO - model saved
+2020-11-17 16:32:19,555 - log\train.log - INFO - evaluate:test
+2020-11-17 16:33:01,231 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1122 phrases; correct: 750.
+
+2020-11-17 16:33:01,239 - log\train.log - INFO - accuracy:  94.25%; precision:  66.84%; recall:  72.05%; FB1:  69.35
+
+2020-11-17 16:33:01,239 - log\train.log - INFO -  : accuracy:  93.24%; precision:  57.67%; recall:  62.40%; FB1:  59.94  541
+
+2020-11-17 16:33:01,239 - log\train.log - INFO - Cause: accuracy:  65.38%; precision:  74.80%; recall:  81.03%; FB1:  77.79  377
+
+2020-11-17 16:33:01,239 - log\train.log - INFO - Effect: accuracy:  67.92%; precision:  76.47%; recall:  80.83%; FB1:  78.59  204
+
+2020-11-17 16:33:01,479 - log\train.log - INFO - new best test f1 score:69.350
+2020-11-17 16:33:01,479 - log\train.log - INFO - end 12 epoch
+2020-11-17 16:33:11,631 - log\train.log - INFO - epoch:13,iteration:14 step:6/238, NER loss: 6.641346
+2020-11-17 16:36:01,938 - log\train.log - INFO - epoch:13,iteration:14 step:106/238, NER loss: 5.842521
+2020-11-17 16:38:55,794 - log\train.log - INFO - epoch:13,iteration:14 step:206/238, NER loss: 6.156680
+2020-11-17 16:39:50,599 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:40:24,710 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 827 phrases; correct: 625.
+
+2020-11-17 16:40:24,710 - log\train.log - INFO - accuracy:  94.95%; precision:  75.57%; recall:  68.08%; FB1:  71.63
+
+2020-11-17 16:40:24,710 - log\train.log - INFO -  : accuracy:  93.36%; precision:  64.16%; recall:  58.31%; FB1:  61.10  399
+
+2020-11-17 16:40:24,710 - log\train.log - INFO - Cause: accuracy:  67.04%; precision:  86.47%; recall:  73.95%; FB1:  79.72  266
+
+2020-11-17 16:40:24,710 - log\train.log - INFO - Effect: accuracy:  75.36%; precision:  85.80%; recall:  82.74%; FB1:  84.24  162
+
+2020-11-17 16:40:24,710 - log\train.log - INFO - evaluate:test
+2020-11-17 16:41:04,270 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 960 phrases; correct: 684.
+
+2020-11-17 16:41:04,270 - log\train.log - INFO - accuracy:  94.44%; precision:  71.25%; recall:  65.71%; FB1:  68.37
+
+2020-11-17 16:41:04,270 - log\train.log - INFO -  : accuracy:  93.63%; precision:  61.26%; recall:  56.60%; FB1:  58.84  462
+
+2020-11-17 16:41:04,270 - log\train.log - INFO - Cause: accuracy:  64.64%; precision:  80.88%; recall:  74.14%; FB1:  77.36  319
+
+2020-11-17 16:41:04,270 - log\train.log - INFO - Effect: accuracy:  65.04%; precision:  79.89%; recall:  74.09%; FB1:  76.88  179
+
+2020-11-17 16:41:04,270 - log\train.log - INFO - end 13 epoch
+2020-11-17 16:43:00,058 - log\train.log - INFO - epoch:14,iteration:15 step:68/238, NER loss: 6.637011
+2020-11-17 16:45:54,138 - log\train.log - INFO - epoch:14,iteration:15 step:168/238, NER loss: 5.610445
+2020-11-17 16:47:58,056 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:48:33,080 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 857 phrases; correct: 639.
+
+2020-11-17 16:48:33,088 - log\train.log - INFO - accuracy:  95.27%; precision:  74.56%; recall:  69.61%; FB1:  72.00
+
+2020-11-17 16:48:33,096 - log\train.log - INFO -  : accuracy:  93.43%; precision:  64.16%; recall:  60.36%; FB1:  62.21  413
+
+2020-11-17 16:48:33,096 - log\train.log - INFO - Cause: accuracy:  69.21%; precision:  86.94%; recall:  74.92%; FB1:  80.48  268
+
+2020-11-17 16:48:33,096 - log\train.log - INFO - Effect: accuracy:  72.07%; precision:  80.11%; recall:  83.93%; FB1:  81.98  176
+
+2020-11-17 16:48:33,336 - log\train.log - INFO - new best dev f1 score:72.000
+2020-11-17 16:48:35,287 - log\train.log - INFO - model saved
+2020-11-17 16:48:35,295 - log\train.log - INFO - evaluate:test
+2020-11-17 16:49:15,739 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1021 phrases; correct: 721.
+
+2020-11-17 16:49:15,739 - log\train.log - INFO - accuracy:  94.58%; precision:  70.62%; recall:  69.26%; FB1:  69.93
+
+2020-11-17 16:49:15,739 - log\train.log - INFO -  : accuracy:  93.58%; precision:  60.37%; recall:  59.40%; FB1:  59.88  492
+
+2020-11-17 16:49:15,739 - log\train.log - INFO - Cause: accuracy:  66.67%; precision:  81.40%; recall:  76.72%; FB1:  78.99  328
+
+2020-11-17 16:49:15,739 - log\train.log - INFO - Effect: accuracy:  68.87%; precision:  78.11%; recall:  81.35%; FB1:  79.70  201
+
+2020-11-17 16:49:15,996 - log\train.log - INFO - new best test f1 score:69.930
+2020-11-17 16:49:15,996 - log\train.log - INFO - end 14 epoch
+2020-11-17 16:50:06,952 - log\train.log - INFO - epoch:15,iteration:16 step:30/238, NER loss: 6.163926
+2020-11-17 16:53:00,357 - log\train.log - INFO - epoch:15,iteration:16 step:130/238, NER loss: 5.829386
+2020-11-17 16:55:52,211 - log\train.log - INFO - epoch:15,iteration:16 step:230/238, NER loss: 6.279598
+2020-11-17 16:56:05,991 - log\train.log - INFO - evaluate:dev
+2020-11-17 16:56:41,402 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 824 phrases; correct: 630.
+
+2020-11-17 16:56:41,410 - log\train.log - INFO - accuracy:  95.29%; precision:  76.46%; recall:  68.63%; FB1:  72.33
+
+2020-11-17 16:56:41,410 - log\train.log - INFO -  : accuracy:  93.69%; precision:  66.41%; recall:  59.91%; FB1:  62.99  396
+
+2020-11-17 16:56:41,410 - log\train.log - INFO - Cause: accuracy:  68.35%; precision:  85.04%; recall:  74.92%; FB1:  79.66  274
+
+2020-11-17 16:56:41,410 - log\train.log - INFO - Effect: accuracy:  73.40%; precision:  87.01%; recall:  79.76%; FB1:  83.23  154
+
+2020-11-17 16:56:41,635 - log\train.log - INFO - new best dev f1 score:72.330
+2020-11-17 16:56:43,423 - log\train.log - INFO - model saved
+2020-11-17 16:56:43,423 - log\train.log - INFO - evaluate:test
+2020-11-17 16:57:24,254 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 979 phrases; correct: 691.
+
+2020-11-17 16:57:24,254 - log\train.log - INFO - accuracy:  94.44%; precision:  70.58%; recall:  66.38%; FB1:  68.42
+
+2020-11-17 16:57:24,254 - log\train.log - INFO -  : accuracy:  93.44%; precision:  59.70%; recall:  56.60%; FB1:  58.11  474
+
+2020-11-17 16:57:24,254 - log\train.log - INFO - Cause: accuracy:  66.21%; precision:  79.82%; recall:  77.30%; FB1:  78.54  337
+
+2020-11-17 16:57:24,254 - log\train.log - INFO - Effect: accuracy:  64.68%; precision:  82.74%; recall:  72.02%; FB1:  77.01  168
+
+2020-11-17 16:57:24,262 - log\train.log - INFO - end 15 epoch
+2020-11-17 17:00:12,723 - log\train.log - INFO - epoch:16,iteration:17 step:92/238, NER loss: 5.457748
+2020-11-17 17:03:13,096 - log\train.log - INFO - epoch:16,iteration:17 step:192/238, NER loss: 6.028177
+2020-11-17 17:04:31,494 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:05:08,784 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 882 phrases; correct: 653.
+
+2020-11-17 17:05:08,784 - log\train.log - INFO - accuracy:  95.29%; precision:  74.04%; recall:  71.13%; FB1:  72.56
+
+2020-11-17 17:05:08,784 - log\train.log - INFO -  : accuracy:  93.50%; precision:  64.30%; recall:  61.96%; FB1:  63.11  423
+
+2020-11-17 17:05:08,784 - log\train.log - INFO - Cause: accuracy:  69.25%; precision:  82.65%; recall:  78.14%; FB1:  80.33  294
+
+2020-11-17 17:05:08,784 - log\train.log - INFO - Effect: accuracy:  73.24%; precision:  83.64%; recall:  82.14%; FB1:  82.88  165
+
+2020-11-17 17:05:09,053 - log\train.log - INFO - new best dev f1 score:72.560
+2020-11-17 17:05:10,817 - log\train.log - INFO - model saved
+2020-11-17 17:05:10,817 - log\train.log - INFO - evaluate:test
+2020-11-17 17:05:55,126 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1037 phrases; correct: 742.
+
+2020-11-17 17:05:55,142 - log\train.log - INFO - accuracy:  95.14%; precision:  71.55%; recall:  71.28%; FB1:  71.41
+
+2020-11-17 17:05:55,142 - log\train.log - INFO -  : accuracy:  93.75%; precision:  61.20%; recall:  61.20%; FB1:  61.20  500
+
+2020-11-17 17:05:55,142 - log\train.log - INFO - Cause: accuracy:  68.18%; precision:  79.89%; recall:  79.89%; FB1:  79.89  348
+
+2020-11-17 17:05:55,142 - log\train.log - INFO - Effect: accuracy:  72.61%; precision:  83.60%; recall:  81.87%; FB1:  82.72  189
+
+2020-11-17 17:05:55,512 - log\train.log - INFO - new best test f1 score:71.410
+2020-11-17 17:05:55,512 - log\train.log - INFO - end 16 epoch
+2020-11-17 17:07:36,934 - log\train.log - INFO - epoch:17,iteration:18 step:54/238, NER loss: 5.259209
+2020-11-17 17:10:33,569 - log\train.log - INFO - epoch:17,iteration:18 step:154/238, NER loss: 5.101479
+2020-11-17 17:13:11,885 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:13:58,171 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 945 phrases; correct: 670.
+
+2020-11-17 17:13:58,171 - log\train.log - INFO - accuracy:  94.98%; precision:  70.90%; recall:  72.98%; FB1:  71.93
+
+2020-11-17 17:13:58,171 - log\train.log - INFO -  : accuracy:  93.16%; precision:  61.54%; recall:  63.78%; FB1:  62.64  455
+
+2020-11-17 17:13:58,171 - log\train.log - INFO - Cause: accuracy:  67.88%; precision:  76.56%; recall:  82.96%; FB1:  79.63  337
+
+2020-11-17 17:13:58,171 - log\train.log - INFO - Effect: accuracy:  72.99%; precision:  86.27%; recall:  78.57%; FB1:  82.24  153
+
+2020-11-17 17:13:58,171 - log\train.log - INFO - evaluate:test
+2020-11-17 17:14:41,219 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1142 phrases; correct: 748.
+
+2020-11-17 17:14:41,220 - log\train.log - INFO - accuracy:  94.47%; precision:  65.50%; recall:  71.85%; FB1:  68.53
+
+2020-11-17 17:14:41,221 - log\train.log - INFO -  : accuracy:  93.08%; precision:  56.44%; recall:  62.20%; FB1:  59.18  551
+
+2020-11-17 17:14:41,222 - log\train.log - INFO - Cause: accuracy:  63.99%; precision:  71.57%; recall:  82.47%; FB1:  76.64  401
+
+2020-11-17 17:14:41,223 - log\train.log - INFO - Effect: accuracy:  67.83%; precision:  78.95%; recall:  77.72%; FB1:  78.33  190
+
+2020-11-17 17:14:41,224 - log\train.log - INFO - end 17 epoch
+2020-11-17 17:15:09,229 - log\train.log - INFO - epoch:18,iteration:19 step:16/238, NER loss: 6.159520
+2020-11-17 17:18:07,583 - log\train.log - INFO - epoch:18,iteration:19 step:116/238, NER loss: 5.315768
+2020-11-17 17:21:09,188 - log\train.log - INFO - epoch:18,iteration:19 step:216/238, NER loss: 5.596902
+2020-11-17 17:21:47,279 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:22:24,093 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 852 phrases; correct: 651.
+
+2020-11-17 17:22:24,093 - log\train.log - INFO - accuracy:  95.56%; precision:  76.41%; recall:  70.92%; FB1:  73.56
+
+2020-11-17 17:22:24,093 - log\train.log - INFO -  : accuracy:  94.02%; precision:  67.97%; recall:  63.33%; FB1:  65.57  409
+
+2020-11-17 17:22:24,109 - log\train.log - INFO - Cause: accuracy:  67.90%; precision:  84.17%; recall:  75.24%; FB1:  79.46  278
+
+2020-11-17 17:22:24,109 - log\train.log - INFO - Effect: accuracy:  74.42%; precision:  84.24%; recall:  82.74%; FB1:  83.48  165
+
+2020-11-17 17:22:24,355 - log\train.log - INFO - new best dev f1 score:73.560
+2020-11-17 17:22:26,210 - log\train.log - INFO - model saved
+2020-11-17 17:22:26,211 - log\train.log - INFO - evaluate:test
+2020-11-17 17:23:07,998 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 986 phrases; correct: 706.
+
+2020-11-17 17:23:07,998 - log\train.log - INFO - accuracy:  94.79%; precision:  71.60%; recall:  67.82%; FB1:  69.66
+
+2020-11-17 17:23:07,998 - log\train.log - INFO -  : accuracy:  93.70%; precision:  61.34%; recall:  58.40%; FB1:  59.84  476
+
+2020-11-17 17:23:07,998 - log\train.log - INFO - Cause: accuracy:  66.12%; precision:  80.85%; recall:  76.44%; FB1:  78.58  329
+
+2020-11-17 17:23:07,998 - log\train.log - INFO - Effect: accuracy:  67.90%; precision:  81.77%; recall:  76.68%; FB1:  79.14  181
+
+2020-11-17 17:23:07,998 - log\train.log - INFO - end 18 epoch
+2020-11-17 17:25:25,048 - log\train.log - INFO - epoch:19,iteration:20 step:78/238, NER loss: 4.715020
+2020-11-17 17:28:23,706 - log\train.log - INFO - epoch:19,iteration:20 step:178/238, NER loss: 5.635248
+2020-11-17 17:30:10,937 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:30:45,899 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 935 phrases; correct: 674.
+
+2020-11-17 17:30:45,899 - log\train.log - INFO - accuracy:  94.83%; precision:  72.09%; recall:  73.42%; FB1:  72.75
+
+2020-11-17 17:30:45,899 - log\train.log - INFO -  : accuracy:  93.35%; precision:  62.81%; recall:  64.24%; FB1:  63.51  449
+
+2020-11-17 17:30:45,899 - log\train.log - INFO - Cause: accuracy:  68.47%; precision:  77.64%; recall:  82.64%; FB1:  80.06  331
+
+2020-11-17 17:30:45,905 - log\train.log - INFO - Effect: accuracy:  73.89%; precision:  87.10%; recall:  80.36%; FB1:  83.59  155
+
+2020-11-17 17:30:45,905 - log\train.log - INFO - evaluate:test
+2020-11-17 17:31:26,326 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1063 phrases; correct: 747.
+
+2020-11-17 17:31:26,327 - log\train.log - INFO - accuracy:  94.73%; precision:  70.27%; recall:  71.76%; FB1:  71.01
+
+2020-11-17 17:31:26,327 - log\train.log - INFO -  : accuracy:  93.66%; precision:  60.55%; recall:  62.00%; FB1:  61.26  512
+
+2020-11-17 17:31:26,328 - log\train.log - INFO - Cause: accuracy:  66.89%; precision:  76.90%; recall:  81.32%; FB1:  79.05  368
+
+2020-11-17 17:31:26,328 - log\train.log - INFO - Effect: accuracy:  71.90%; precision:  84.15%; recall:  79.79%; FB1:  81.91  183
+
+2020-11-17 17:31:26,329 - log\train.log - INFO - end 19 epoch
+2020-11-17 17:32:35,736 - log\train.log - INFO - epoch:20,iteration:21 step:40/238, NER loss: 4.896566
+2020-11-17 17:35:32,757 - log\train.log - INFO - epoch:20,iteration:21 step:140/238, NER loss: 5.295249
+2020-11-17 17:38:21,618 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:38:56,776 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 915 phrases; correct: 657.
+
+2020-11-17 17:38:56,776 - log\train.log - INFO - accuracy:  95.00%; precision:  71.80%; recall:  71.57%; FB1:  71.69
+
+2020-11-17 17:38:56,776 - log\train.log - INFO -  : accuracy:  93.11%; precision:  61.64%; recall:  61.50%; FB1:  61.57  438
+
+2020-11-17 17:38:56,776 - log\train.log - INFO - Cause: accuracy:  66.75%; precision:  80.33%; recall:  77.49%; FB1:  78.89  300
+
+2020-11-17 17:38:56,776 - log\train.log - INFO - Effect: accuracy:  75.80%; precision:  82.49%; recall:  86.90%; FB1:  84.64  177
+
+2020-11-17 17:38:56,776 - log\train.log - INFO - evaluate:test
+2020-11-17 17:39:38,161 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1091 phrases; correct: 742.
+
+2020-11-17 17:39:38,161 - log\train.log - INFO - accuracy:  94.44%; precision:  68.01%; recall:  71.28%; FB1:  69.61
+
+2020-11-17 17:39:38,161 - log\train.log - INFO -  : accuracy:  93.39%; precision:  58.63%; recall:  61.80%; FB1:  60.18  527
+
+2020-11-17 17:39:38,161 - log\train.log - INFO - Cause: accuracy:  64.62%; precision:  75.20%; recall:  80.17%; FB1:  77.61  371
+
+2020-11-17 17:39:38,161 - log\train.log - INFO - Effect: accuracy:  69.65%; precision:  79.79%; recall:  79.79%; FB1:  79.79  193
+
+2020-11-17 17:39:38,176 - log\train.log - INFO - end 20 epoch
+2020-11-17 17:39:41,603 - log\train.log - INFO - epoch:21,iteration:22 step:2/238, NER loss: 4.881983
+2020-11-17 17:42:34,672 - log\train.log - INFO - epoch:21,iteration:22 step:102/238, NER loss: 5.621050
+2020-11-17 17:45:29,164 - log\train.log - INFO - epoch:21,iteration:22 step:202/238, NER loss: 4.386760
+2020-11-17 17:46:31,323 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:47:06,513 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 883 phrases; correct: 651.
+
+2020-11-17 17:47:06,513 - log\train.log - INFO - accuracy:  95.39%; precision:  73.73%; recall:  70.92%; FB1:  72.29
+
+2020-11-17 17:47:06,513 - log\train.log - INFO -  : accuracy:  93.33%; precision:  63.21%; recall:  61.05%; FB1:  62.11  424
+
+2020-11-17 17:47:06,513 - log\train.log - INFO - Cause: accuracy:  70.45%; precision:  81.09%; recall:  81.35%; FB1:  81.22  312
+
+2020-11-17 17:47:06,513 - log\train.log - INFO - Effect: accuracy:  72.77%; precision:  88.44%; recall:  77.38%; FB1:  82.54  147
+
+2020-11-17 17:47:06,513 - log\train.log - INFO - evaluate:test
+2020-11-17 17:47:46,993 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1020 phrases; correct: 730.
+
+2020-11-17 17:47:46,993 - log\train.log - INFO - accuracy:  95.12%; precision:  71.57%; recall:  70.12%; FB1:  70.84
+
+2020-11-17 17:47:46,993 - log\train.log - INFO -  : accuracy:  93.70%; precision:  60.98%; recall:  60.00%; FB1:  60.48  492
+
+2020-11-17 17:47:46,993 - log\train.log - INFO - Cause: accuracy:  68.01%; precision:  78.39%; recall:  81.32%; FB1:  79.83  361
+
+2020-11-17 17:47:46,993 - log\train.log - INFO - Effect: accuracy:  71.30%; precision:  88.02%; recall:  76.17%; FB1:  81.67  167
+
+2020-11-17 17:47:46,993 - log\train.log - INFO - end 21 epoch
+2020-11-17 17:49:37,825 - log\train.log - INFO - epoch:22,iteration:23 step:64/238, NER loss: 4.525304
+2020-11-17 17:52:29,877 - log\train.log - INFO - epoch:22,iteration:23 step:164/238, NER loss: 4.698780
+2020-11-17 17:54:37,089 - log\train.log - INFO - evaluate:dev
+2020-11-17 17:55:11,555 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 915 phrases; correct: 668.
+
+2020-11-17 17:55:11,555 - log\train.log - INFO - accuracy:  95.50%; precision:  73.01%; recall:  72.77%; FB1:  72.89
+
+2020-11-17 17:55:11,555 - log\train.log - INFO -  : accuracy:  93.25%; precision:  62.27%; recall:  62.41%; FB1:  62.34  440
+
+2020-11-17 17:55:11,555 - log\train.log - INFO - Cause: accuracy:  69.85%; precision:  81.70%; recall:  80.39%; FB1:  81.04  306
+
+2020-11-17 17:55:11,555 - log\train.log - INFO - Effect: accuracy:  77.10%; precision:  85.21%; recall:  85.71%; FB1:  85.46  169
+
+2020-11-17 17:55:11,555 - log\train.log - INFO - evaluate:test
+2020-11-17 17:55:51,679 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1080 phrases; correct: 738.
+
+2020-11-17 17:55:51,679 - log\train.log - INFO - accuracy:  94.77%; precision:  68.33%; recall:  70.89%; FB1:  69.59
+
+2020-11-17 17:55:51,679 - log\train.log - INFO -  : accuracy:  93.43%; precision:  58.81%; recall:  61.40%; FB1:  60.08  522
+
+2020-11-17 17:55:51,679 - log\train.log - INFO - Cause: accuracy:  64.18%; precision:  75.20%; recall:  79.31%; FB1:  77.20  367
+
+2020-11-17 17:55:51,679 - log\train.log - INFO - Effect: accuracy:  70.98%; precision:  81.15%; recall:  80.31%; FB1:  80.73  191
+
+2020-11-17 17:55:51,679 - log\train.log - INFO - end 22 epoch
+2020-11-17 17:56:36,421 - log\train.log - INFO - epoch:23,iteration:24 step:26/238, NER loss: 5.266691
+2020-11-17 17:59:28,438 - log\train.log - INFO - epoch:23,iteration:24 step:126/238, NER loss: 4.614403
+2020-11-17 18:02:20,985 - log\train.log - INFO - epoch:23,iteration:24 step:226/238, NER loss: 4.280560
+2020-11-17 18:02:42,420 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:03:17,773 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 965 phrases; correct: 685.
+
+2020-11-17 18:03:17,773 - log\train.log - INFO - accuracy:  95.19%; precision:  70.98%; recall:  74.62%; FB1:  72.76
+
+2020-11-17 18:03:17,773 - log\train.log - INFO -  : accuracy:  93.40%; precision:  62.58%; recall:  66.29%; FB1:  64.38  465
+
+2020-11-17 18:03:17,773 - log\train.log - INFO - Cause: accuracy:  65.88%; precision:  74.20%; recall:  82.32%; FB1:  78.05  345
+
+2020-11-17 18:03:17,773 - log\train.log - INFO - Effect: accuracy:  77.29%; precision:  89.03%; recall:  82.14%; FB1:  85.45  155
+
+2020-11-17 18:03:17,773 - log\train.log - INFO - evaluate:test
+2020-11-17 18:03:58,993 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1136 phrases; correct: 763.
+
+2020-11-17 18:03:59,008 - log\train.log - INFO - accuracy:  94.64%; precision:  67.17%; recall:  73.29%; FB1:  70.10
+
+2020-11-17 18:03:59,008 - log\train.log - INFO -  : accuracy:  93.26%; precision:  57.59%; recall:  63.00%; FB1:  60.17  547
+
+2020-11-17 18:03:59,008 - log\train.log - INFO - Cause: accuracy:  65.13%; precision:  72.98%; recall:  83.05%; FB1:  77.69  396
+
+2020-11-17 18:03:59,008 - log\train.log - INFO - Effect: accuracy:  72.80%; precision:  82.38%; recall:  82.38%; FB1:  82.38  193
+
+2020-11-17 18:03:59,008 - log\train.log - INFO - end 23 epoch
+2020-11-17 18:06:32,092 - log\train.log - INFO - epoch:24,iteration:25 step:88/238, NER loss: 4.757882
+2020-11-17 18:09:24,946 - log\train.log - INFO - epoch:24,iteration:25 step:188/238, NER loss: 4.520699
+2020-11-17 18:10:51,864 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:11:27,053 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 908 phrases; correct: 659.
+
+2020-11-17 18:11:27,053 - log\train.log - INFO - accuracy:  95.16%; precision:  72.58%; recall:  71.79%; FB1:  72.18
+
+2020-11-17 18:11:27,053 - log\train.log - INFO -  : accuracy:  93.24%; precision:  62.39%; recall:  61.96%; FB1:  62.17  436
+
+2020-11-17 18:11:27,053 - log\train.log - INFO - Cause: accuracy:  67.42%; precision:  79.74%; recall:  78.46%; FB1:  79.09  306
+
+2020-11-17 18:11:27,053 - log\train.log - INFO - Effect: accuracy:  76.92%; precision:  86.14%; recall:  85.12%; FB1:  85.63  166
+
+2020-11-17 18:11:27,053 - log\train.log - INFO - evaluate:test
+2020-11-17 18:12:07,490 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1055 phrases; correct: 742.
+
+2020-11-17 18:12:07,490 - log\train.log - INFO - accuracy:  95.09%; precision:  70.33%; recall:  71.28%; FB1:  70.80
+
+2020-11-17 18:12:07,490 - log\train.log - INFO -  : accuracy:  93.58%; precision:  59.96%; recall:  60.80%; FB1:  60.38  507
+
+2020-11-17 18:12:07,490 - log\train.log - INFO - Cause: accuracy:  67.11%; precision:  77.78%; recall:  80.46%; FB1:  79.10  360
+
+2020-11-17 18:12:07,505 - log\train.log - INFO - Effect: accuracy:  73.47%; precision:  84.04%; recall:  81.87%; FB1:  82.94  188
+
+2020-11-17 18:12:07,505 - log\train.log - INFO - end 24 epoch
+2020-11-17 18:13:36,356 - log\train.log - INFO - epoch:25,iteration:26 step:50/238, NER loss: 4.157890
+2020-11-17 18:16:29,662 - log\train.log - INFO - epoch:25,iteration:26 step:150/238, NER loss: 4.792202
+2020-11-17 18:19:01,925 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:19:37,170 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 875 phrases; correct: 663.
+
+2020-11-17 18:19:37,170 - log\train.log - INFO - accuracy:  95.46%; precision:  75.77%; recall:  72.22%; FB1:  73.95
+
+2020-11-17 18:19:37,170 - log\train.log - INFO -  : accuracy:  93.76%; precision:  65.88%; recall:  63.33%; FB1:  64.58  422
+
+2020-11-17 18:19:37,186 - log\train.log - INFO - Cause: accuracy:  69.92%; precision:  84.08%; recall:  78.14%; FB1:  81.00  289
+
+2020-11-17 18:19:37,186 - log\train.log - INFO - Effect: accuracy:  76.70%; precision:  86.59%; recall:  84.52%; FB1:  85.54  164
+
+2020-11-17 18:19:37,487 - log\train.log - INFO - new best dev f1 score:73.950
+2020-11-17 18:19:39,406 - log\train.log - INFO - model saved
+2020-11-17 18:19:39,406 - log\train.log - INFO - evaluate:test
+2020-11-17 18:20:20,157 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 995 phrases; correct: 709.
+
+2020-11-17 18:20:20,159 - log\train.log - INFO - accuracy:  95.05%; precision:  71.26%; recall:  68.11%; FB1:  69.65
+
+2020-11-17 18:20:20,160 - log\train.log - INFO -  : accuracy:  93.55%; precision:  60.13%; recall:  57.60%; FB1:  58.84  479
+
+2020-11-17 18:20:20,160 - log\train.log - INFO - Cause: accuracy:  66.67%; precision:  79.48%; recall:  79.02%; FB1:  79.25  346
+
+2020-11-17 18:20:20,161 - log\train.log - INFO - Effect: accuracy:  69.66%; precision:  85.88%; recall:  75.65%; FB1:  80.44  170
+
+2020-11-17 18:20:20,162 - log\train.log - INFO - end 25 epoch
+2020-11-17 18:20:41,481 - log\train.log - INFO - epoch:26,iteration:27 step:12/238, NER loss: 4.400076
+2020-11-17 18:23:36,002 - log\train.log - INFO - epoch:26,iteration:27 step:112/238, NER loss: 4.064991
+2020-11-17 18:26:34,299 - log\train.log - INFO - epoch:26,iteration:27 step:212/238, NER loss: 4.349905
+2020-11-17 18:27:20,696 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:27:56,433 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 930 phrases; correct: 682.
+
+2020-11-17 18:27:56,434 - log\train.log - INFO - accuracy:  95.42%; precision:  73.33%; recall:  74.29%; FB1:  73.81
+
+2020-11-17 18:27:56,435 - log\train.log - INFO -  : accuracy:  93.54%; precision:  63.70%; recall:  65.15%; FB1:  64.41  449
+
+2020-11-17 18:27:56,436 - log\train.log - INFO - Cause: accuracy:  69.74%; precision:  80.63%; recall:  81.67%; FB1:  81.15  315
+
+2020-11-17 18:27:56,436 - log\train.log - INFO - Effect: accuracy:  76.08%; precision:  85.54%; recall:  84.52%; FB1:  85.03  166
+
+2020-11-17 18:27:56,437 - log\train.log - INFO - evaluate:test
+2020-11-17 18:28:37,740 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1083 phrases; correct: 756.
+
+2020-11-17 18:28:37,740 - log\train.log - INFO - accuracy:  95.06%; precision:  69.81%; recall:  72.62%; FB1:  71.19
+
+2020-11-17 18:28:37,740 - log\train.log - INFO -  : accuracy:  93.61%; precision:  59.81%; recall:  62.80%; FB1:  61.27  525
+
+2020-11-17 18:28:37,740 - log\train.log - INFO - Cause: accuracy:  66.52%; precision:  77.17%; recall:  81.61%; FB1:  79.33  368
+
+2020-11-17 18:28:37,740 - log\train.log - INFO - Effect: accuracy:  72.87%; precision:  83.16%; recall:  81.87%; FB1:  82.51  190
+
+2020-11-17 18:28:37,740 - log\train.log - INFO - end 26 epoch
+2020-11-17 18:30:54,719 - log\train.log - INFO - epoch:27,iteration:28 step:74/238, NER loss: 4.157576
+2020-11-17 18:33:52,988 - log\train.log - INFO - epoch:27,iteration:28 step:174/238, NER loss: 4.757467
+2020-11-17 18:35:48,447 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:36:24,474 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 822 phrases; correct: 631.
+
+2020-11-17 18:36:24,475 - log\train.log - INFO - accuracy:  95.52%; precision:  76.76%; recall:  68.74%; FB1:  72.53
+
+2020-11-17 18:36:24,476 - log\train.log - INFO -  : accuracy:  93.55%; precision:  65.48%; recall:  58.77%; FB1:  61.94  394
+
+2020-11-17 18:36:24,477 - log\train.log - INFO - Cause: accuracy:  68.99%; precision:  88.76%; recall:  73.63%; FB1:  80.49  258
+
+2020-11-17 18:36:24,477 - log\train.log - INFO - Effect: accuracy:  76.42%; precision:  84.71%; recall:  85.71%; FB1:  85.21  170
+
+2020-11-17 18:36:24,479 - log\train.log - INFO - evaluate:test
+2020-11-17 18:37:07,014 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 961 phrases; correct: 696.
+
+2020-11-17 18:37:07,016 - log\train.log - INFO - accuracy:  95.08%; precision:  72.42%; recall:  66.86%; FB1:  69.53
+
+2020-11-17 18:37:07,016 - log\train.log - INFO -  : accuracy:  93.63%; precision:  61.04%; recall:  56.40%; FB1:  58.63  462
+
+2020-11-17 18:37:07,017 - log\train.log - INFO - Cause: accuracy:  63.96%; precision:  80.88%; recall:  74.14%; FB1:  77.36  319
+
+2020-11-17 18:37:07,018 - log\train.log - INFO - Effect: accuracy:  74.79%; precision:  86.67%; recall:  80.83%; FB1:  83.65  180
+
+2020-11-17 18:37:07,019 - log\train.log - INFO - end 27 epoch
+2020-11-17 18:38:11,134 - log\train.log - INFO - epoch:28,iteration:29 step:36/238, NER loss: 4.140246
+2020-11-17 18:41:09,539 - log\train.log - INFO - epoch:28,iteration:29 step:136/238, NER loss: 3.987777
+2020-11-17 18:44:08,429 - log\train.log - INFO - epoch:28,iteration:29 step:236/238, NER loss: 4.425058
+2020-11-17 18:44:12,138 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:44:48,081 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 927 phrases; correct: 673.
+
+2020-11-17 18:44:48,082 - log\train.log - INFO - accuracy:  95.33%; precision:  72.60%; recall:  73.31%; FB1:  72.95
+
+2020-11-17 18:44:48,083 - log\train.log - INFO -  : accuracy:  93.49%; precision:  63.60%; recall:  64.46%; FB1:  64.03  445
+
+2020-11-17 18:44:48,084 - log\train.log - INFO - Cause: accuracy:  67.82%; precision:  78.91%; recall:  79.42%; FB1:  79.17  313
+
+2020-11-17 18:44:48,085 - log\train.log - INFO - Effect: accuracy:  75.94%; precision:  84.62%; recall:  85.12%; FB1:  84.87  169
+
+2020-11-17 18:44:48,086 - log\train.log - INFO - evaluate:test
+2020-11-17 18:45:30,124 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1053 phrases; correct: 732.
+
+2020-11-17 18:45:30,126 - log\train.log - INFO - accuracy:  94.68%; precision:  69.52%; recall:  70.32%; FB1:  69.91
+
+2020-11-17 18:45:30,126 - log\train.log - INFO -  : accuracy:  93.64%; precision:  60.47%; recall:  61.20%; FB1:  60.83  506
+
+2020-11-17 18:45:30,127 - log\train.log - INFO - Cause: accuracy:  62.58%; precision:  75.07%; recall:  76.15%; FB1:  75.61  353
+
+2020-11-17 18:45:30,128 - log\train.log - INFO - Effect: accuracy:  74.10%; precision:  82.99%; recall:  83.42%; FB1:  83.20  194
+
+2020-11-17 18:45:30,129 - log\train.log - INFO - end 28 epoch
+2020-11-17 18:48:23,168 - log\train.log - INFO - epoch:29,iteration:30 step:98/238, NER loss: 4.193317
+2020-11-17 18:51:18,405 - log\train.log - INFO - epoch:29,iteration:30 step:198/238, NER loss: 4.056070
+2020-11-17 18:52:29,201 - log\train.log - INFO - evaluate:dev
+2020-11-17 18:53:04,544 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 844 phrases; correct: 635.
+
+2020-11-17 18:53:04,545 - log\train.log - INFO - accuracy:  95.48%; precision:  75.24%; recall:  69.17%; FB1:  72.08
+
+2020-11-17 18:53:04,545 - log\train.log - INFO -  : accuracy:  93.51%; precision:  64.78%; recall:  59.91%; FB1:  62.25  406
+
+2020-11-17 18:53:04,546 - log\train.log - INFO - Cause: accuracy:  67.02%; precision:  84.31%; recall:  74.28%; FB1:  78.97  274
+
+2020-11-17 18:53:04,547 - log\train.log - INFO - Effect: accuracy:  75.85%; precision:  85.98%; recall:  83.93%; FB1:  84.94  164
+
+2020-11-17 18:53:04,548 - log\train.log - INFO - evaluate:test
+2020-11-17 18:53:46,088 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 979 phrases; correct: 702.
+
+2020-11-17 18:53:46,089 - log\train.log - INFO - accuracy:  95.03%; precision:  71.71%; recall:  67.44%; FB1:  69.50
+
+2020-11-17 18:53:46,090 - log\train.log - INFO -  : accuracy:  93.56%; precision:  60.43%; recall:  56.80%; FB1:  58.56  470
+
+2020-11-17 18:53:46,091 - log\train.log - INFO - Cause: accuracy:  65.35%; precision:  79.53%; recall:  77.01%; FB1:  78.25  337
+
+2020-11-17 18:53:46,092 - log\train.log - INFO - Effect: accuracy:  72.46%; precision:  87.21%; recall:  77.72%; FB1:  82.19  172
+
+2020-11-17 18:53:46,093 - log\train.log - INFO - end 29 epoch
+2020-11-17 18:55:30,179 - log\train.log - INFO - epoch:30,iteration:31 step:60/238, NER loss: 4.031846
+2020-11-17 18:58:25,509 - log\train.log - INFO - epoch:30,iteration:31 step:160/238, NER loss: 4.138670
+2020-11-17 19:00:44,066 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:01:19,497 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 928 phrases; correct: 676.
+
+2020-11-17 19:01:19,498 - log\train.log - INFO - accuracy:  95.61%; precision:  72.84%; recall:  73.64%; FB1:  73.24
+
+2020-11-17 19:01:19,499 - log\train.log - INFO -  : accuracy:  93.35%; precision:  62.64%; recall:  63.78%; FB1:  63.21  447
+
+2020-11-17 19:01:19,500 - log\train.log - INFO - Cause: accuracy:  69.87%; precision:  82.61%; recall:  79.42%; FB1:  80.98  299
+
+2020-11-17 19:01:19,500 - log\train.log - INFO - Effect: accuracy:  76.58%; precision:  81.87%; recall:  88.69%; FB1:  85.14  182
+
+2020-11-17 19:01:19,501 - log\train.log - INFO - evaluate:test
+2020-11-17 19:02:02,171 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1085 phrases; correct: 754.
+
+2020-11-17 19:02:02,172 - log\train.log - INFO - accuracy:  94.96%; precision:  69.49%; recall:  72.43%; FB1:  70.93
+
+2020-11-17 19:02:02,173 - log\train.log - INFO -  : accuracy:  93.62%; precision:  59.96%; recall:  62.60%; FB1:  61.25  522
+
+2020-11-17 19:02:02,173 - log\train.log - INFO - Cause: accuracy:  66.14%; precision:  77.87%; recall:  79.89%; FB1:  78.87  357
+
+2020-11-17 19:02:02,174 - log\train.log - INFO - Effect: accuracy:  71.71%; precision:  79.13%; recall:  84.46%; FB1:  81.70  206
+
+2020-11-17 19:02:02,175 - log\train.log - INFO - end 30 epoch
+2020-11-17 19:02:40,921 - log\train.log - INFO - epoch:31,iteration:32 step:22/238, NER loss: 4.368218
+2020-11-17 19:05:38,226 - log\train.log - INFO - epoch:31,iteration:32 step:122/238, NER loss: 3.775784
+2020-11-17 19:08:34,839 - log\train.log - INFO - epoch:31,iteration:32 step:222/238, NER loss: 4.189406
+2020-11-17 19:09:03,246 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:09:38,607 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 904 phrases; correct: 664.
+
+2020-11-17 19:09:38,608 - log\train.log - INFO - accuracy:  95.44%; precision:  73.45%; recall:  72.33%; FB1:  72.89
+
+2020-11-17 19:09:38,609 - log\train.log - INFO -  : accuracy:  93.54%; precision:  64.14%; recall:  63.55%; FB1:  63.84  435
+
+2020-11-17 19:09:38,609 - log\train.log - INFO - Cause: accuracy:  66.58%; precision:  78.64%; recall:  78.14%; FB1:  78.39  309
+
+2020-11-17 19:09:38,610 - log\train.log - INFO - Effect: accuracy:  78.33%; precision:  88.75%; recall:  84.52%; FB1:  86.59  160
+
+2020-11-17 19:09:38,611 - log\train.log - INFO - evaluate:test
+2020-11-17 19:10:20,128 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1087 phrases; correct: 751.
+
+2020-11-17 19:10:20,130 - log\train.log - INFO - accuracy:  95.17%; precision:  69.09%; recall:  72.14%; FB1:  70.58
+
+2020-11-17 19:10:20,131 - log\train.log - INFO -  : accuracy:  93.57%; precision:  59.51%; recall:  62.60%; FB1:  61.01  526
+
+2020-11-17 19:10:20,131 - log\train.log - INFO - Cause: accuracy:  64.87%; precision:  74.80%; recall:  80.17%; FB1:  77.39  373
+
+2020-11-17 19:10:20,132 - log\train.log - INFO - Effect: accuracy:  74.39%; precision:  84.57%; recall:  82.38%; FB1:  83.46  188
+
+2020-11-17 19:10:20,133 - log\train.log - INFO - end 31 epoch
+2020-11-17 19:12:56,761 - log\train.log - INFO - epoch:32,iteration:33 step:84/238, NER loss: 4.142476
+2020-11-17 19:15:52,022 - log\train.log - INFO - epoch:32,iteration:33 step:184/238, NER loss: 3.746249
+2020-11-17 19:17:27,558 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:18:03,176 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 924 phrases; correct: 678.
+
+2020-11-17 19:18:03,177 - log\train.log - INFO - accuracy:  95.37%; precision:  73.38%; recall:  73.86%; FB1:  73.62
+
+2020-11-17 19:18:03,178 - log\train.log - INFO -  : accuracy:  93.43%; precision:  63.29%; recall:  64.01%; FB1:  63.65  444
+
+2020-11-17 19:18:03,179 - log\train.log - INFO - Cause: accuracy:  69.17%; precision:  79.75%; recall:  81.03%; FB1:  80.38  316
+
+2020-11-17 19:18:03,179 - log\train.log - INFO - Effect: accuracy:  79.00%; precision:  88.41%; recall:  86.31%; FB1:  87.35  164
+
+2020-11-17 19:18:03,181 - log\train.log - INFO - evaluate:test
+2020-11-17 19:18:44,761 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1064 phrases; correct: 747.
+
+2020-11-17 19:18:44,762 - log\train.log - INFO - accuracy:  95.08%; precision:  70.21%; recall:  71.76%; FB1:  70.97
+
+2020-11-17 19:18:44,763 - log\train.log - INFO -  : accuracy:  93.76%; precision:  61.06%; recall:  62.40%; FB1:  61.72  511
+
+2020-11-17 19:18:44,764 - log\train.log - INFO - Cause: accuracy:  65.17%; precision:  77.18%; recall:  78.74%; FB1:  77.95  355
+
+2020-11-17 19:18:44,765 - log\train.log - INFO - Effect: accuracy:  72.94%; precision:  81.31%; recall:  83.42%; FB1:  82.35  198
+
+2020-11-17 19:18:44,766 - log\train.log - INFO - end 32 epoch
+2020-11-17 19:20:04,687 - log\train.log - INFO - epoch:33,iteration:34 step:46/238, NER loss: 3.761885
+2020-11-17 19:23:02,706 - log\train.log - INFO - epoch:33,iteration:34 step:146/238, NER loss: 3.494951
+2020-11-17 19:25:44,995 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:26:21,504 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 888 phrases; correct: 676.
+
+2020-11-17 19:26:21,505 - log\train.log - INFO - accuracy:  95.69%; precision:  76.13%; recall:  73.64%; FB1:  74.86
+
+2020-11-17 19:26:21,506 - log\train.log - INFO -  : accuracy:  93.89%; precision:  66.51%; recall:  64.69%; FB1:  65.59  427
+
+2020-11-17 19:26:21,507 - log\train.log - INFO - Cause: accuracy:  69.97%; precision:  81.85%; recall:  79.74%; FB1:  80.78  303
+
+2020-11-17 19:26:21,508 - log\train.log - INFO - Effect: accuracy:  81.00%; precision:  91.14%; recall:  85.71%; FB1:  88.34  158
+
+2020-11-17 19:26:21,828 - log\train.log - INFO - new best dev f1 score:74.860
+2020-11-17 19:26:23,744 - log\train.log - INFO - model saved
+2020-11-17 19:26:23,746 - log\train.log - INFO - evaluate:test
+2020-11-17 19:27:05,542 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1009 phrases; correct: 736.
+
+2020-11-17 19:27:05,543 - log\train.log - INFO - accuracy:  95.42%; precision:  72.94%; recall:  70.70%; FB1:  71.80
+
+2020-11-17 19:27:05,545 - log\train.log - INFO -  : accuracy:  93.93%; precision:  62.50%; recall:  61.00%; FB1:  61.74  488
+
+2020-11-17 19:27:05,545 - log\train.log - INFO - Cause: accuracy:  68.78%; precision:  82.09%; recall:  79.02%; FB1:  80.53  335
+
+2020-11-17 19:27:05,546 - log\train.log - INFO - Effect: accuracy:  72.76%; precision:  83.87%; recall:  80.83%; FB1:  82.32  186
+
+2020-11-17 19:27:05,827 - log\train.log - INFO - new best test f1 score:71.800
+2020-11-17 19:27:05,828 - log\train.log - INFO - end 33 epoch
+2020-11-17 19:27:19,614 - log\train.log - INFO - epoch:34,iteration:35 step:8/238, NER loss: 4.070302
+2020-11-17 19:30:15,225 - log\train.log - INFO - epoch:34,iteration:35 step:108/238, NER loss: 4.036676
+2020-11-17 19:33:10,544 - log\train.log - INFO - epoch:34,iteration:35 step:208/238, NER loss: 3.852574
+2020-11-17 19:34:03,989 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:34:39,978 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 909 phrases; correct: 678.
+
+2020-11-17 19:34:39,978 - log\train.log - INFO - accuracy:  95.42%; precision:  74.59%; recall:  73.86%; FB1:  74.22
+
+2020-11-17 19:34:39,978 - log\train.log - INFO -  : accuracy:  93.68%; precision:  64.92%; recall:  64.92%; FB1:  64.92  439
+
+2020-11-17 19:34:39,978 - log\train.log - INFO - Cause: accuracy:  69.70%; precision:  80.91%; recall:  80.39%; FB1:  80.65  309
+
+2020-11-17 19:34:39,978 - log\train.log - INFO - Effect: accuracy:  78.82%; precision:  88.82%; recall:  85.12%; FB1:  86.93  161
+
+2020-11-17 19:34:39,978 - log\train.log - INFO - evaluate:test
+2020-11-17 19:35:24,620 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1074 phrases; correct: 767.
+
+2020-11-17 19:35:24,633 - log\train.log - INFO - accuracy:  95.48%; precision:  71.42%; recall:  73.68%; FB1:  72.53
+
+2020-11-17 19:35:24,633 - log\train.log - INFO -  : accuracy:  93.80%; precision:  61.12%; recall:  63.20%; FB1:  62.14  517
+
+2020-11-17 19:35:24,633 - log\train.log - INFO - Cause: accuracy:  71.53%; precision:  80.55%; recall:  84.48%; FB1:  82.47  365
+
+2020-11-17 19:35:24,633 - log\train.log - INFO - Effect: accuracy:  71.60%; precision:  81.77%; recall:  81.35%; FB1:  81.56  192
+
+2020-11-17 19:35:24,896 - log\train.log - INFO - new best test f1 score:72.530
+2020-11-17 19:35:24,896 - log\train.log - INFO - end 34 epoch
+2020-11-17 19:37:28,461 - log\train.log - INFO - epoch:35,iteration:36 step:70/238, NER loss: 3.777448
+2020-11-17 19:40:31,422 - log\train.log - INFO - epoch:35,iteration:36 step:170/238, NER loss: 3.921965
+2020-11-17 19:42:35,811 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:43:12,126 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 878 phrases; correct: 650.
+
+2020-11-17 19:43:12,142 - log\train.log - INFO - accuracy:  95.35%; precision:  74.03%; recall:  70.81%; FB1:  72.38
+
+2020-11-17 19:43:12,143 - log\train.log - INFO -  : accuracy:  93.61%; precision:  64.86%; recall:  62.64%; FB1:  63.73  424
+
+2020-11-17 19:43:12,144 - log\train.log - INFO - Cause: accuracy:  67.35%; precision:  80.81%; recall:  77.17%; FB1:  78.95  297
+
+2020-11-17 19:43:12,145 - log\train.log - INFO - Effect: accuracy:  73.56%; precision:  85.99%; recall:  80.36%; FB1:  83.08  157
+
+2020-11-17 19:43:12,147 - log\train.log - INFO - evaluate:test
+2020-11-17 19:43:52,573 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1039 phrases; correct: 749.
+
+2020-11-17 19:43:52,573 - log\train.log - INFO - accuracy:  95.17%; precision:  72.09%; recall:  71.95%; FB1:  72.02
+
+2020-11-17 19:43:52,573 - log\train.log - INFO -  : accuracy:  93.85%; precision:  61.80%; recall:  61.80%; FB1:  61.80  500
+
+2020-11-17 19:43:52,573 - log\train.log - INFO - Cause: accuracy:  67.21%; precision:  80.77%; recall:  78.45%; FB1:  79.59  338
+
+2020-11-17 19:43:52,588 - log\train.log - INFO - Effect: accuracy:  75.81%; precision:  83.08%; recall:  86.53%; FB1:  84.77  201
+
+2020-11-17 19:43:52,588 - log\train.log - INFO - end 35 epoch
+2020-11-17 19:44:50,471 - log\train.log - INFO - epoch:36,iteration:37 step:32/238, NER loss: 4.067238
+2020-11-17 19:47:46,567 - log\train.log - INFO - epoch:36,iteration:37 step:132/238, NER loss: 3.422589
+2020-11-17 19:50:49,790 - log\train.log - INFO - epoch:36,iteration:37 step:232/238, NER loss: 4.216762
+2020-11-17 19:51:00,081 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:51:34,992 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 895 phrases; correct: 656.
+
+2020-11-17 19:51:34,992 - log\train.log - INFO - accuracy:  95.29%; precision:  73.30%; recall:  71.46%; FB1:  72.37
+
+2020-11-17 19:51:34,993 - log\train.log - INFO -  : accuracy:  93.41%; precision:  63.43%; recall:  62.41%; FB1:  62.92  432
+
+2020-11-17 19:51:34,994 - log\train.log - INFO - Cause: accuracy:  69.97%; precision:  83.56%; recall:  78.46%; FB1:  80.93  292
+
+2020-11-17 19:51:34,995 - log\train.log - INFO - Effect: accuracy:  70.83%; precision:  80.70%; recall:  82.14%; FB1:  81.42  171
+
+2020-11-17 19:51:34,996 - log\train.log - INFO - evaluate:test
+2020-11-17 19:52:15,306 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1046 phrases; correct: 729.
+
+2020-11-17 19:52:15,306 - log\train.log - INFO - accuracy:  94.88%; precision:  69.69%; recall:  70.03%; FB1:  69.86
+
+2020-11-17 19:52:15,306 - log\train.log - INFO -  : accuracy:  93.57%; precision:  59.92%; recall:  60.40%; FB1:  60.16  504
+
+2020-11-17 19:52:15,306 - log\train.log - INFO - Cause: accuracy:  64.91%; precision:  78.59%; recall:  77.01%; FB1:  77.79  341
+
+2020-11-17 19:52:15,306 - log\train.log - INFO - Effect: accuracy:  70.43%; precision:  79.10%; recall:  82.38%; FB1:  80.71  201
+
+2020-11-17 19:52:15,306 - log\train.log - INFO - end 36 epoch
+2020-11-17 19:54:57,881 - log\train.log - INFO - epoch:37,iteration:38 step:94/238, NER loss: 3.814872
+2020-11-17 19:57:51,075 - log\train.log - INFO - epoch:37,iteration:38 step:194/238, NER loss: 3.436073
+2020-11-17 19:59:08,902 - log\train.log - INFO - evaluate:dev
+2020-11-17 19:59:46,225 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 890 phrases; correct: 654.
+
+2020-11-17 19:59:46,226 - log\train.log - INFO - accuracy:  95.31%; precision:  73.48%; recall:  71.24%; FB1:  72.35
+
+2020-11-17 19:59:46,227 - log\train.log - INFO -  : accuracy:  93.52%; precision:  64.25%; recall:  62.64%; FB1:  63.44  428
+
+2020-11-17 19:59:46,228 - log\train.log - INFO - Cause: accuracy:  67.35%; precision:  81.72%; recall:  76.21%; FB1:  78.87  290
+
+2020-11-17 19:59:46,229 - log\train.log - INFO - Effect: accuracy:  74.19%; precision:  82.56%; recall:  84.52%; FB1:  83.53  172
+
+2020-11-17 19:59:46,230 - log\train.log - INFO - evaluate:test
+2020-11-17 20:00:30,390 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1008 phrases; correct: 729.
+
+2020-11-17 20:00:30,392 - log\train.log - INFO - accuracy:  95.41%; precision:  72.32%; recall:  70.03%; FB1:  71.16
+
+2020-11-17 20:00:30,393 - log\train.log - INFO -  : accuracy:  94.02%; precision:  63.17%; recall:  61.40%; FB1:  62.27  486
+
+2020-11-17 20:00:30,393 - log\train.log - INFO - Cause: accuracy:  65.14%; precision:  79.17%; recall:  76.44%; FB1:  77.78  336
+
+2020-11-17 20:00:30,394 - log\train.log - INFO - Effect: accuracy:  72.87%; precision:  83.87%; recall:  80.83%; FB1:  82.32  186
+
+2020-11-17 20:00:30,395 - log\train.log - INFO - end 37 epoch
+2020-11-17 20:02:12,768 - log\train.log - INFO - epoch:38,iteration:39 step:56/238, NER loss: 3.447253
+2020-11-17 20:05:14,186 - log\train.log - INFO - epoch:38,iteration:39 step:156/238, NER loss: 3.949986
+2020-11-17 20:07:45,982 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:08:23,373 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 870 phrases; correct: 647.
+
+2020-11-17 20:08:23,373 - log\train.log - INFO - accuracy:  95.52%; precision:  74.37%; recall:  70.48%; FB1:  72.37
+
+2020-11-17 20:08:23,389 - log\train.log - INFO -  : accuracy:  93.60%; precision:  64.92%; recall:  61.96%; FB1:  63.40  419
+
+2020-11-17 20:08:23,389 - log\train.log - INFO - Cause: accuracy:  67.45%; precision:  81.85%; recall:  76.85%; FB1:  79.27  292
+
+2020-11-17 20:08:23,389 - log\train.log - INFO - Effect: accuracy:  74.06%; precision:  85.53%; recall:  80.95%; FB1:  83.18  159
+
+2020-11-17 20:08:23,389 - log\train.log - INFO - evaluate:test
+2020-11-17 20:09:04,806 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1015 phrases; correct: 727.
+
+2020-11-17 20:09:04,807 - log\train.log - INFO - accuracy:  95.24%; precision:  71.63%; recall:  69.84%; FB1:  70.72
+
+2020-11-17 20:09:04,808 - log\train.log - INFO -  : accuracy:  93.69%; precision:  60.94%; recall:  59.60%; FB1:  60.26  489
+
+2020-11-17 20:09:04,808 - log\train.log - INFO - Cause: accuracy:  65.74%; precision:  79.76%; recall:  77.01%; FB1:  78.36  336
+
+2020-11-17 20:09:04,809 - log\train.log - INFO - Effect: accuracy:  75.00%; precision:  84.74%; recall:  83.42%; FB1:  84.07  190
+
+2020-11-17 20:09:04,810 - log\train.log - INFO - end 38 epoch
+2020-11-17 20:09:36,440 - log\train.log - INFO - epoch:39,iteration:40 step:18/238, NER loss: 3.771312
+2020-11-17 20:12:39,070 - log\train.log - INFO - epoch:39,iteration:40 step:118/238, NER loss: 3.553386
+2020-11-17 20:15:44,700 - log\train.log - INFO - epoch:39,iteration:40 step:218/238, NER loss: 4.027069
+2020-11-17 20:16:20,945 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:16:58,869 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 891 phrases; correct: 665.
+
+2020-11-17 20:16:58,870 - log\train.log - INFO - accuracy:  95.42%; precision:  74.64%; recall:  72.44%; FB1:  73.52
+
+2020-11-17 20:16:58,871 - log\train.log - INFO -  : accuracy:  93.73%; precision:  65.57%; recall:  63.78%; FB1:  64.67  427
+
+2020-11-17 20:16:58,871 - log\train.log - INFO - Cause: accuracy:  68.41%; precision:  83.22%; recall:  76.53%; FB1:  79.73  286
+
+2020-11-17 20:16:58,872 - log\train.log - INFO - Effect: accuracy:  76.15%; precision:  82.58%; recall:  87.50%; FB1:  84.97  178
+
+2020-11-17 20:16:58,874 - log\train.log - INFO - evaluate:test
+2020-11-17 20:17:42,095 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1071 phrases; correct: 754.
+
+2020-11-17 20:17:42,096 - log\train.log - INFO - accuracy:  95.17%; precision:  70.40%; recall:  72.43%; FB1:  71.40
+
+2020-11-17 20:17:42,097 - log\train.log - INFO -  : accuracy:  93.83%; precision:  61.36%; recall:  63.20%; FB1:  62.27  515
+
+2020-11-17 20:17:42,097 - log\train.log - INFO - Cause: accuracy:  66.97%; precision:  80.24%; recall:  78.16%; FB1:  79.18  339
+
+2020-11-17 20:17:42,098 - log\train.log - INFO - Effect: accuracy:  70.45%; precision:  76.50%; recall:  86.01%; FB1:  80.98  217
+
+2020-11-17 20:17:42,099 - log\train.log - INFO - end 39 epoch
+2020-11-17 20:20:08,255 - log\train.log - INFO - epoch:40,iteration:41 step:80/238, NER loss: 3.679134
+2020-11-17 20:23:08,166 - log\train.log - INFO - epoch:40,iteration:41 step:180/238, NER loss: 3.559668
+2020-11-17 20:24:55,838 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:25:31,819 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 923 phrases; correct: 663.
+
+2020-11-17 20:25:31,821 - log\train.log - INFO - accuracy:  95.21%; precision:  71.83%; recall:  72.22%; FB1:  72.03
+
+2020-11-17 20:25:31,822 - log\train.log - INFO -  : accuracy:  93.39%; precision:  63.00%; recall:  64.01%; FB1:  63.50  446
+
+2020-11-17 20:25:31,822 - log\train.log - INFO - Cause: accuracy:  67.26%; precision:  80.95%; recall:  76.53%; FB1:  78.68  294
+
+2020-11-17 20:25:31,823 - log\train.log - INFO - Effect: accuracy:  72.25%; precision:  78.69%; recall:  85.71%; FB1:  82.05  183
+
+2020-11-17 20:25:31,824 - log\train.log - INFO - evaluate:test
+2020-11-17 20:26:15,161 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1124 phrases; correct: 770.
+
+2020-11-17 20:26:15,161 - log\train.log - INFO - accuracy:  95.00%; precision:  68.51%; recall:  73.97%; FB1:  71.13
+
+2020-11-17 20:26:15,161 - log\train.log - INFO -  : accuracy:  93.58%; precision:  59.44%; recall:  64.20%; FB1:  61.73  540
+
+2020-11-17 20:26:15,161 - log\train.log - INFO - Cause: accuracy:  66.00%; precision:  76.57%; recall:  80.75%; FB1:  78.60  367
+
+2020-11-17 20:26:15,161 - log\train.log - INFO - Effect: accuracy:  72.08%; precision:  77.42%; recall:  87.05%; FB1:  81.95  217
+
+2020-11-17 20:26:15,161 - log\train.log - INFO - end 40 epoch
+2020-11-17 20:27:34,733 - log\train.log - INFO - epoch:41,iteration:42 step:42/238, NER loss: 3.400903
+2020-11-17 20:30:34,935 - log\train.log - INFO - epoch:41,iteration:42 step:142/238, NER loss: 3.671344
+2020-11-17 20:33:30,832 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:34:07,614 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 884 phrases; correct: 648.
+
+2020-11-17 20:34:07,615 - log\train.log - INFO - accuracy:  95.23%; precision:  73.30%; recall:  70.59%; FB1:  71.92
+
+2020-11-17 20:34:07,615 - log\train.log - INFO -  : accuracy:  93.34%; precision:  63.15%; recall:  61.28%; FB1:  62.20  426
+
+2020-11-17 20:34:07,616 - log\train.log - INFO - Cause: accuracy:  67.45%; precision:  81.48%; recall:  77.81%; FB1:  79.61  297
+
+2020-11-17 20:34:07,616 - log\train.log - INFO - Effect: accuracy:  73.93%; precision:  85.09%; recall:  81.55%; FB1:  83.28  161
+
+2020-11-17 20:34:07,619 - log\train.log - INFO - evaluate:test
+2020-11-17 20:34:50,040 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1013 phrases; correct: 728.
+
+2020-11-17 20:34:50,040 - log\train.log - INFO - accuracy:  95.32%; precision:  71.87%; recall:  69.93%; FB1:  70.89
+
+2020-11-17 20:34:50,040 - log\train.log - INFO -  : accuracy:  93.77%; precision:  61.52%; recall:  59.80%; FB1:  60.65  486
+
+2020-11-17 20:34:50,040 - log\train.log - INFO - Cause: accuracy:  65.37%; precision:  79.06%; recall:  77.01%; FB1:  78.02  339
+
+2020-11-17 20:34:50,040 - log\train.log - INFO - Effect: accuracy:  75.52%; precision:  85.64%; recall:  83.42%; FB1:  84.51  188
+
+2020-11-17 20:34:50,040 - log\train.log - INFO - end 41 epoch
+2020-11-17 20:34:57,389 - log\train.log - INFO - epoch:42,iteration:43 step:4/238, NER loss: 3.816467
+2020-11-17 20:38:01,866 - log\train.log - INFO - epoch:42,iteration:43 step:104/238, NER loss: 3.333611
+2020-11-17 20:40:56,186 - log\train.log - INFO - epoch:42,iteration:43 step:204/238, NER loss: 3.426634
+2020-11-17 20:42:00,537 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:42:40,391 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 899 phrases; correct: 673.
+
+2020-11-17 20:42:40,392 - log\train.log - INFO - accuracy:  95.79%; precision:  74.86%; recall:  73.31%; FB1:  74.08
+
+2020-11-17 20:42:40,392 - log\train.log - INFO -  : accuracy:  93.77%; precision:  65.51%; recall:  64.46%; FB1:  64.98  432
+
+2020-11-17 20:42:40,393 - log\train.log - INFO - Cause: accuracy:  70.00%; precision:  84.32%; recall:  77.81%; FB1:  80.94  287
+
+2020-11-17 20:42:40,394 - log\train.log - INFO - Effect: accuracy:  76.36%; precision:  82.22%; recall:  88.10%; FB1:  85.06  180
+
+2020-11-17 20:42:40,395 - log\train.log - INFO - evaluate:test
+2020-11-17 20:43:27,450 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1090 phrases; correct: 770.
+
+2020-11-17 20:43:27,450 - log\train.log - INFO - accuracy:  95.23%; precision:  70.64%; recall:  73.97%; FB1:  72.27
+
+2020-11-17 20:43:27,450 - log\train.log - INFO -  : accuracy:  93.76%; precision:  60.80%; recall:  63.60%; FB1:  62.17  523
+
+2020-11-17 20:43:27,450 - log\train.log - INFO - Cause: accuracy:  68.65%; precision:  79.39%; recall:  81.90%; FB1:  80.62  359
+
+2020-11-17 20:43:27,450 - log\train.log - INFO - Effect: accuracy:  73.83%; precision:  80.29%; recall:  86.53%; FB1:  83.29  208
+
+2020-11-17 20:43:27,450 - log\train.log - INFO - end 42 epoch
+2020-11-17 20:45:28,606 - log\train.log - INFO - epoch:43,iteration:44 step:66/238, NER loss: 3.449321
+2020-11-17 20:48:31,985 - log\train.log - INFO - epoch:43,iteration:44 step:166/238, NER loss: 3.963876
+2020-11-17 20:50:42,247 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:51:17,407 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 911 phrases; correct: 681.
+
+2020-11-17 20:51:17,407 - log\train.log - INFO - accuracy:  95.58%; precision:  74.75%; recall:  74.18%; FB1:  74.47
+
+2020-11-17 20:51:17,407 - log\train.log - INFO -  : accuracy:  93.89%; precision:  66.06%; recall:  66.06%; FB1:  66.06  439
+
+2020-11-17 20:51:17,407 - log\train.log - INFO - Cause: accuracy:  71.07%; precision:  82.51%; recall:  80.39%; FB1:  81.43  303
+
+2020-11-17 20:51:17,407 - log\train.log - INFO - Effect: accuracy:  73.93%; precision:  83.43%; recall:  83.93%; FB1:  83.68  169
+
+2020-11-17 20:51:17,407 - log\train.log - INFO - evaluate:test
+2020-11-17 20:51:58,026 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1078 phrases; correct: 763.
+
+2020-11-17 20:51:58,026 - log\train.log - INFO - accuracy:  95.09%; precision:  70.78%; recall:  73.29%; FB1:  72.02
+
+2020-11-17 20:51:58,026 - log\train.log - INFO -  : accuracy:  93.78%; precision:  61.08%; recall:  63.40%; FB1:  62.22  519
+
+2020-11-17 20:51:58,026 - log\train.log - INFO - Cause: accuracy:  69.27%; precision:  78.69%; recall:  82.76%; FB1:  80.67  366
+
+2020-11-17 20:51:58,026 - log\train.log - INFO - Effect: accuracy:  71.89%; precision:  81.87%; recall:  81.87%; FB1:  81.87  193
+
+2020-11-17 20:51:58,026 - log\train.log - INFO - end 43 epoch
+2020-11-17 20:52:52,839 - log\train.log - INFO - epoch:44,iteration:45 step:28/238, NER loss: 3.273671
+2020-11-17 20:55:55,119 - log\train.log - INFO - epoch:44,iteration:45 step:128/238, NER loss: 3.363597
+2020-11-17 20:58:52,214 - log\train.log - INFO - epoch:44,iteration:45 step:228/238, NER loss: 3.377428
+2020-11-17 20:59:09,159 - log\train.log - INFO - evaluate:dev
+2020-11-17 20:59:44,443 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 919 phrases; correct: 686.
+
+2020-11-17 20:59:44,443 - log\train.log - INFO - accuracy:  95.84%; precision:  74.65%; recall:  74.73%; FB1:  74.69
+
+2020-11-17 20:59:44,443 - log\train.log - INFO -  : accuracy:  93.83%; precision:  65.68%; recall:  65.83%; FB1:  65.76  440
+
+2020-11-17 20:59:44,443 - log\train.log - INFO - Cause: accuracy:  71.83%; precision:  84.12%; recall:  80.06%; FB1:  82.04  296
+
+2020-11-17 20:59:44,443 - log\train.log - INFO - Effect: accuracy:  75.34%; precision:  80.87%; recall:  88.10%; FB1:  84.33  183
+
+2020-11-17 20:59:44,443 - log\train.log - INFO - evaluate:test
+2020-11-17 21:00:24,874 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1113 phrases; correct: 751.
+
+2020-11-17 21:00:24,874 - log\train.log - INFO - accuracy:  94.96%; precision:  67.48%; recall:  72.14%; FB1:  69.73
+
+2020-11-17 21:00:24,874 - log\train.log - INFO -  : accuracy:  93.37%; precision:  58.21%; recall:  62.40%; FB1:  60.23  536
+
+2020-11-17 21:00:24,874 - log\train.log - INFO - Cause: accuracy:  65.70%; precision:  77.56%; recall:  78.45%; FB1:  78.00  352
+
+2020-11-17 21:00:24,880 - log\train.log - INFO - Effect: accuracy:  68.84%; precision:  73.78%; recall:  86.01%; FB1:  79.43  225
+
+2020-11-17 21:00:24,880 - log\train.log - INFO - end 44 epoch
+2020-11-17 21:03:03,413 - log\train.log - INFO - epoch:45,iteration:46 step:90/238, NER loss: 3.269959
+2020-11-17 21:06:12,190 - log\train.log - INFO - epoch:45,iteration:46 step:190/238, NER loss: 3.636308
+2020-11-17 21:07:39,004 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:08:14,583 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 935 phrases; correct: 693.
+
+2020-11-17 21:08:14,583 - log\train.log - INFO - accuracy:  95.61%; precision:  74.12%; recall:  75.49%; FB1:  74.80
+
+2020-11-17 21:08:14,583 - log\train.log - INFO -  : accuracy:  93.90%; precision:  65.85%; recall:  67.20%; FB1:  66.52  448
+
+2020-11-17 21:08:14,583 - log\train.log - INFO - Cause: accuracy:  70.28%; precision:  80.63%; recall:  81.67%; FB1:  81.15  315
+
+2020-11-17 21:08:14,587 - log\train.log - INFO - Effect: accuracy:  75.70%; precision:  83.72%; recall:  85.71%; FB1:  84.71  172
+
+2020-11-17 21:08:14,587 - log\train.log - INFO - evaluate:test
+2020-11-17 21:08:56,888 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1082 phrases; correct: 775.
+
+2020-11-17 21:08:56,888 - log\train.log - INFO - accuracy:  95.36%; precision:  71.63%; recall:  74.45%; FB1:  73.01
+
+2020-11-17 21:08:56,888 - log\train.log - INFO -  : accuracy:  94.04%; precision:  62.57%; recall:  65.20%; FB1:  63.86  521
+
+2020-11-17 21:08:56,888 - log\train.log - INFO - Cause: accuracy:  68.93%; precision:  79.55%; recall:  81.61%; FB1:  80.57  357
+
+2020-11-17 21:08:56,888 - log\train.log - INFO - Effect: accuracy:  73.83%; precision:  80.88%; recall:  85.49%; FB1:  83.12  204
+
+2020-11-17 21:08:57,604 - log\train.log - INFO - new best test f1 score:73.010
+2020-11-17 21:08:57,604 - log\train.log - INFO - end 45 epoch
+2020-11-17 21:10:27,485 - log\train.log - INFO - epoch:46,iteration:47 step:52/238, NER loss: 3.613204
+2020-11-17 21:13:22,544 - log\train.log - INFO - epoch:46,iteration:47 step:152/238, NER loss: 3.352674
+2020-11-17 21:15:52,944 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:16:27,861 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 888 phrases; correct: 683.
+
+2020-11-17 21:16:27,861 - log\train.log - INFO - accuracy:  95.96%; precision:  76.91%; recall:  74.40%; FB1:  75.64
+
+2020-11-17 21:16:27,861 - log\train.log - INFO -  : accuracy:  94.20%; precision:  68.31%; recall:  66.29%; FB1:  67.28  426
+
+2020-11-17 21:16:27,877 - log\train.log - INFO - Cause: accuracy:  70.76%; precision:  83.73%; recall:  79.42%; FB1:  81.52  295
+
+2020-11-17 21:16:27,877 - log\train.log - INFO - Effect: accuracy:  78.67%; precision:  86.83%; recall:  86.31%; FB1:  86.57  167
+
+2020-11-17 21:16:28,147 - log\train.log - INFO - new best dev f1 score:75.640
+2020-11-17 21:16:31,669 - log\train.log - INFO - model saved
+2020-11-17 21:16:31,669 - log\train.log - INFO - evaluate:test
+2020-11-17 21:17:13,599 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1039 phrases; correct: 756.
+
+2020-11-17 21:17:13,599 - log\train.log - INFO - accuracy:  95.74%; precision:  72.76%; recall:  72.62%; FB1:  72.69
+
+2020-11-17 21:17:13,599 - log\train.log - INFO -  : accuracy:  94.12%; precision:  63.40%; recall:  63.40%; FB1:  63.40  500
+
+2020-11-17 21:17:13,599 - log\train.log - INFO - Cause: accuracy:  67.81%; precision:  80.17%; recall:  79.02%; FB1:  79.59  343
+
+2020-11-17 21:17:13,599 - log\train.log - INFO - Effect: accuracy:  75.40%; precision:  83.67%; recall:  84.97%; FB1:  84.32  196
+
+2020-11-17 21:17:13,599 - log\train.log - INFO - end 46 epoch
+2020-11-17 21:17:37,630 - log\train.log - INFO - epoch:47,iteration:48 step:14/238, NER loss: 3.138464
+2020-11-17 21:20:30,844 - log\train.log - INFO - epoch:47,iteration:48 step:114/238, NER loss: 3.302161
+2020-11-17 21:23:28,816 - log\train.log - INFO - epoch:47,iteration:48 step:214/238, NER loss: 3.634578
+2020-11-17 21:24:12,264 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:24:48,990 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 889 phrases; correct: 686.
+
+2020-11-17 21:24:48,990 - log\train.log - INFO - accuracy:  96.11%; precision:  77.17%; recall:  74.73%; FB1:  75.93
+
+2020-11-17 21:24:48,990 - log\train.log - INFO -  : accuracy:  94.26%; precision:  68.62%; recall:  66.74%; FB1:  67.67  427
+
+2020-11-17 21:24:48,990 - log\train.log - INFO - Cause: accuracy:  72.35%; precision:  83.77%; recall:  81.35%; FB1:  82.54  302
+
+2020-11-17 21:24:48,990 - log\train.log - INFO - Effect: accuracy:  76.92%; precision:  87.50%; recall:  83.33%; FB1:  85.37  160
+
+2020-11-17 21:24:49,253 - log\train.log - INFO - new best dev f1 score:75.930
+2020-11-17 21:24:51,090 - log\train.log - INFO - model saved
+2020-11-17 21:24:51,090 - log\train.log - INFO - evaluate:test
+2020-11-17 21:25:33,614 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1085 phrases; correct: 760.
+
+2020-11-17 21:25:33,614 - log\train.log - INFO - accuracy:  95.26%; precision:  70.05%; recall:  73.01%; FB1:  71.50
+
+2020-11-17 21:25:33,614 - log\train.log - INFO -  : accuracy:  93.61%; precision:  59.88%; recall:  62.40%; FB1:  61.12  521
+
+2020-11-17 21:25:33,614 - log\train.log - INFO - Cause: accuracy:  68.00%; precision:  77.72%; recall:  82.18%; FB1:  79.89  368
+
+2020-11-17 21:25:33,614 - log\train.log - INFO - Effect: accuracy:  73.90%; precision:  82.65%; recall:  83.94%; FB1:  83.29  196
+
+2020-11-17 21:25:33,614 - log\train.log - INFO - end 47 epoch
+2020-11-17 21:27:50,683 - log\train.log - INFO - epoch:48,iteration:49 step:76/238, NER loss: 3.439194
+2020-11-17 21:30:54,267 - log\train.log - INFO - epoch:48,iteration:49 step:176/238, NER loss: 3.189949
+2020-11-17 21:32:52,733 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:33:31,610 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 955 phrases; correct: 693.
+
+2020-11-17 21:33:31,610 - log\train.log - INFO - accuracy:  95.54%; precision:  72.57%; recall:  75.49%; FB1:  74.00
+
+2020-11-17 21:33:31,610 - log\train.log - INFO -  : accuracy:  93.64%; precision:  64.05%; recall:  66.97%; FB1:  65.48  459
+
+2020-11-17 21:33:31,610 - log\train.log - INFO - Cause: accuracy:  69.78%; precision:  78.31%; recall:  83.60%; FB1:  80.87  332
+
+2020-11-17 21:33:31,610 - log\train.log - INFO - Effect: accuracy:  74.77%; precision:  84.76%; recall:  82.74%; FB1:  83.73  164
+
+2020-11-17 21:33:31,610 - log\train.log - INFO - evaluate:test
+2020-11-17 21:34:13,661 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1118 phrases; correct: 764.
+
+2020-11-17 21:34:13,662 - log\train.log - INFO - accuracy:  94.94%; precision:  68.34%; recall:  73.39%; FB1:  70.77
+
+2020-11-17 21:34:13,663 - log\train.log - INFO -  : accuracy:  93.49%; precision:  58.96%; recall:  63.20%; FB1:  61.00  536
+
+2020-11-17 21:34:13,663 - log\train.log - INFO - Cause: accuracy:  65.07%; precision:  75.13%; recall:  80.75%; FB1:  77.84  374
+
+2020-11-17 21:34:13,663 - log\train.log - INFO - Effect: accuracy:  73.83%; precision:  80.29%; recall:  86.53%; FB1:  83.29  208
+
+2020-11-17 21:34:13,664 - log\train.log - INFO - end 48 epoch
+2020-11-17 21:35:21,268 - log\train.log - INFO - epoch:49,iteration:50 step:38/238, NER loss: 3.281640
+2020-11-17 21:38:22,805 - log\train.log - INFO - epoch:49,iteration:50 step:138/238, NER loss: 3.042788
+2020-11-17 21:41:21,028 - log\train.log - INFO - epoch:49,iteration:51 step:0/238, NER loss: 3.570878
+2020-11-17 21:41:21,029 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:41:57,216 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 914 phrases; correct: 686.
+
+2020-11-17 21:41:57,216 - log\train.log - INFO - accuracy:  95.58%; precision:  75.05%; recall:  74.73%; FB1:  74.89
+
+2020-11-17 21:41:57,216 - log\train.log - INFO -  : accuracy:  93.94%; precision:  66.36%; recall:  66.51%; FB1:  66.44  440
+
+2020-11-17 21:41:57,216 - log\train.log - INFO - Cause: accuracy:  71.43%; precision:  83.17%; recall:  81.03%; FB1:  82.08  303
+
+2020-11-17 21:41:57,216 - log\train.log - INFO - Effect: accuracy:  74.65%; precision:  83.04%; recall:  84.52%; FB1:  83.78  171
+
+2020-11-17 21:41:57,216 - log\train.log - INFO - evaluate:test
+2020-11-17 21:42:39,441 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1097 phrases; correct: 766.
+
+2020-11-17 21:42:39,441 - log\train.log - INFO - accuracy:  95.17%; precision:  69.83%; recall:  73.58%; FB1:  71.66
+
+2020-11-17 21:42:39,441 - log\train.log - INFO -  : accuracy:  93.62%; precision:  59.81%; recall:  63.40%; FB1:  61.55  530
+
+2020-11-17 21:42:39,441 - log\train.log - INFO - Cause: accuracy:  68.18%; precision:  78.89%; recall:  81.61%; FB1:  80.23  360
+
+2020-11-17 21:42:39,441 - log\train.log - INFO - Effect: accuracy:  73.18%; precision:  79.71%; recall:  85.49%; FB1:  82.50  207
+
+2020-11-17 21:42:39,441 - log\train.log - INFO - end 49 epoch
+2020-11-17 21:45:34,111 - log\train.log - INFO - epoch:50,iteration:51 step:100/238, NER loss: 3.004099
+2020-11-17 21:48:41,732 - log\train.log - INFO - epoch:50,iteration:51 step:200/238, NER loss: 3.643484
+2020-11-17 21:49:48,354 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:50:25,129 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 964 phrases; correct: 679.
+
+2020-11-17 21:50:25,129 - log\train.log - INFO - accuracy:  95.08%; precision:  70.44%; recall:  73.97%; FB1:  72.16
+
+2020-11-17 21:50:25,129 - log\train.log - INFO -  : accuracy:  93.14%; precision:  61.21%; recall:  64.69%; FB1:  62.90  464
+
+2020-11-17 21:50:25,129 - log\train.log - INFO - Cause: accuracy:  69.04%; precision:  80.19%; recall:  80.71%; FB1:  80.45  313
+
+2020-11-17 21:50:25,129 - log\train.log - INFO - Effect: accuracy:  70.87%; precision:  77.01%; recall:  85.71%; FB1:  81.13  187
+
+2020-11-17 21:50:25,129 - log\train.log - INFO - evaluate:test
+2020-11-17 21:51:08,481 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1096 phrases; correct: 746.
+
+2020-11-17 21:51:08,481 - log\train.log - INFO - accuracy:  95.00%; precision:  68.07%; recall:  71.66%; FB1:  69.82
+
+2020-11-17 21:51:08,481 - log\train.log - INFO -  : accuracy:  93.41%; precision:  58.49%; recall:  62.00%; FB1:  60.19  530
+
+2020-11-17 21:51:08,481 - log\train.log - INFO - Cause: accuracy:  64.30%; precision:  76.04%; recall:  78.45%; FB1:  77.23  359
+
+2020-11-17 21:51:08,481 - log\train.log - INFO - Effect: accuracy:  71.65%; precision:  78.74%; recall:  84.46%; FB1:  81.50  207
+
+2020-11-17 21:51:08,481 - log\train.log - INFO - end 50 epoch
+2020-11-17 21:53:01,242 - log\train.log - INFO - epoch:51,iteration:52 step:62/238, NER loss: 3.143268
+2020-11-17 21:56:10,061 - log\train.log - INFO - epoch:51,iteration:52 step:162/238, NER loss: 3.338991
+2020-11-17 21:58:24,256 - log\train.log - INFO - evaluate:dev
+2020-11-17 21:59:00,610 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 925 phrases; correct: 673.
+
+2020-11-17 21:59:00,610 - log\train.log - INFO - accuracy:  95.48%; precision:  72.76%; recall:  73.31%; FB1:  73.03
+
+2020-11-17 21:59:00,610 - log\train.log - INFO -  : accuracy:  93.48%; precision:  63.51%; recall:  64.24%; FB1:  63.87  444
+
+2020-11-17 21:59:00,610 - log\train.log - INFO - Cause: accuracy:  68.77%; precision:  79.31%; recall:  81.35%; FB1:  80.32  319
+
+2020-11-17 21:59:00,610 - log\train.log - INFO - Effect: accuracy:  74.65%; precision:  85.19%; recall:  82.14%; FB1:  83.64  162
+
+2020-11-17 21:59:00,610 - log\train.log - INFO - evaluate:test
+2020-11-17 21:59:42,149 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1097 phrases; correct: 767.
+
+2020-11-17 21:59:42,149 - log\train.log - INFO - accuracy:  95.32%; precision:  69.92%; recall:  73.68%; FB1:  71.75
+
+2020-11-17 21:59:42,149 - log\train.log - INFO -  : accuracy:  93.64%; precision:  59.96%; recall:  63.20%; FB1:  61.54  527
+
+2020-11-17 21:59:42,164 - log\train.log - INFO - Cause: accuracy:  67.61%; precision:  76.12%; recall:  83.33%; FB1:  79.56  381
+
+2020-11-17 21:59:42,164 - log\train.log - INFO - Effect: accuracy:  75.41%; precision:  85.19%; recall:  83.42%; FB1:  84.29  189
+
+2020-11-17 21:59:42,164 - log\train.log - INFO - end 51 epoch
+2020-11-17 22:00:23,791 - log\train.log - INFO - epoch:52,iteration:53 step:24/238, NER loss: 3.287953
+2020-11-17 22:03:26,195 - log\train.log - INFO - epoch:52,iteration:53 step:124/238, NER loss: 3.108187
+2020-11-17 22:06:40,740 - log\train.log - INFO - epoch:52,iteration:53 step:224/238, NER loss: 3.449526
+2020-11-17 22:07:07,480 - log\train.log - INFO - evaluate:dev
+2020-11-17 22:07:46,500 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 923 phrases; correct: 669.
+
+2020-11-17 22:07:46,501 - log\train.log - INFO - accuracy:  95.48%; precision:  72.48%; recall:  72.88%; FB1:  72.68
+
+2020-11-17 22:07:46,502 - log\train.log - INFO -  : accuracy:  93.52%; precision:  63.68%; recall:  64.69%; FB1:  64.18  446
+
+2020-11-17 22:07:46,503 - log\train.log - INFO - Cause: accuracy:  68.92%; precision:  80.66%; recall:  79.10%; FB1:  79.87  305
+
+2020-11-17 22:07:46,503 - log\train.log - INFO - Effect: accuracy:  71.69%; precision:  80.81%; recall:  82.74%; FB1:  81.76  172
+
+2020-11-17 22:07:46,504 - log\train.log - INFO - evaluate:test
+2020-11-17 22:08:29,686 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1080 phrases; correct: 768.
+
+2020-11-17 22:08:29,687 - log\train.log - INFO - accuracy:  95.60%; precision:  71.11%; recall:  73.78%; FB1:  72.42
+
+2020-11-17 22:08:29,688 - log\train.log - INFO -  : accuracy:  93.92%; precision:  61.69%; recall:  64.40%; FB1:  63.01  522
+
+2020-11-17 22:08:29,689 - log\train.log - INFO - Cause: accuracy:  67.81%; precision:  78.99%; recall:  81.03%; FB1:  80.00  357
+
+2020-11-17 22:08:29,689 - log\train.log - INFO - Effect: accuracy:  74.52%; precision:  81.59%; recall:  84.97%; FB1:  83.25  201
+
+2020-11-17 22:08:29,691 - log\train.log - INFO - end 52 epoch
+2020-11-17 22:11:10,795 - log\train.log - INFO - epoch:53,iteration:54 step:86/238, NER loss: 2.950427
+2020-11-17 22:14:19,560 - log\train.log - INFO - epoch:53,iteration:54 step:186/238, NER loss: 3.225112
+2020-11-17 22:15:59,098 - log\train.log - INFO - evaluate:dev
+2020-11-17 22:16:35,659 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 963 phrases; correct: 688.
+
+2020-11-17 22:16:35,660 - log\train.log - INFO - accuracy:  95.46%; precision:  71.44%; recall:  74.95%; FB1:  73.15
+
+2020-11-17 22:16:35,661 - log\train.log - INFO -  : accuracy:  93.49%; precision:  63.07%; recall:  66.51%; FB1:  64.75  463
+
+2020-11-17 22:16:35,661 - log\train.log - INFO - Cause: accuracy:  67.79%; precision:  76.42%; recall:  82.32%; FB1:  79.26  335
+
+2020-11-17 22:16:35,662 - log\train.log - INFO - Effect: accuracy:  75.12%; precision:  84.85%; recall:  83.33%; FB1:  84.08  165
+
+2020-11-17 22:16:35,663 - log\train.log - INFO - evaluate:test
+2020-11-17 22:17:19,528 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1110 phrases; correct: 765.
+
+2020-11-17 22:17:19,529 - log\train.log - INFO - accuracy:  95.23%; precision:  68.92%; recall:  73.49%; FB1:  71.13
+
+2020-11-17 22:17:19,530 - log\train.log - INFO -  : accuracy:  93.52%; precision:  59.07%; recall:  63.20%; FB1:  61.06  535
+
+2020-11-17 22:17:19,531 - log\train.log - INFO - Cause: accuracy:  65.23%; precision:  74.41%; recall:  81.90%; FB1:  77.98  383
+
+2020-11-17 22:17:19,533 - log\train.log - INFO - Effect: accuracy:  76.73%; precision:  85.42%; recall:  84.97%; FB1:  85.19  192
+
+2020-11-17 22:17:19,534 - log\train.log - INFO - end 53 epoch
+2020-11-17 22:18:50,295 - log\train.log - INFO - epoch:54,iteration:55 step:48/238, NER loss: 3.588368
+2020-11-17 22:21:58,201 - log\train.log - INFO - epoch:54,iteration:55 step:148/238, NER loss: 2.745918
+2020-11-17 22:24:46,624 - log\train.log - INFO - evaluate:dev
+2020-11-17 22:25:22,075 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 947 phrases; correct: 695.
+
+2020-11-17 22:25:22,076 - log\train.log - INFO - accuracy:  95.63%; precision:  73.39%; recall:  75.71%; FB1:  74.53
+
+2020-11-17 22:25:22,077 - log\train.log - INFO -  : accuracy:  93.63%; precision:  64.04%; recall:  66.51%; FB1:  65.25  456
+
+2020-11-17 22:25:22,078 - log\train.log - INFO - Cause: accuracy:  71.54%; precision:  80.75%; recall:  83.60%; FB1:  82.15  322
+
+2020-11-17 22:25:22,079 - log\train.log - INFO - Effect: accuracy:  76.17%; precision:  84.62%; recall:  85.12%; FB1:  84.87  169
+
+2020-11-17 22:25:22,081 - log\train.log - INFO - evaluate:test
+2020-11-17 22:26:03,523 - log\train.log - INFO - processed 6621 tokens with 1041 phrases; found: 1127 phrases; correct: 770.
+
+2020-11-17 22:26:03,524 - log\train.log - INFO - accuracy:  94.94%; precision:  68.32%; recall:  73.97%; FB1:  71.03
+
+2020-11-17 22:26:03,525 - log\train.log - INFO -  : accuracy:  93.53%; precision:  59.18%; recall:  63.80%; FB1:  61.41  539
+
+2020-11-17 22:26:03,526 - log\train.log - INFO - Cause: accuracy:  65.10%; precision:  74.28%; recall:  81.32%; FB1:  77.64  381
+
+2020-11-17 22:26:03,528 - log\train.log - INFO - Effect: accuracy:  74.70%; precision:  81.16%; recall:  87.05%; FB1:  84.00  207
+
+2020-11-17 22:26:03,529 - log\train.log - INFO - end 54 epoch
+2020-11-17 22:26:20,324 - log\train.log - INFO - epoch:55,iteration:56 step:10/238, NER loss: 3.429941
+2020-11-17 22:29:21,032 - log\train.log - INFO - epoch:55,iteration:56 step:110/238, NER loss: 3.286054
+2020-11-17 22:32:17,447 - log\train.log - INFO - epoch:55,iteration:56 step:210/238, NER loss: 3.190873
+2020-11-17 22:33:07,505 - log\train.log - INFO - evaluate:dev
+2020-11-17 22:33:43,423 - log\train.log - INFO - processed 5244 tokens with 918 phrases; found: 910 phrases; correct: 680.
+
+2020-11-17 22:33:43,425 - log\train.log - INFO - accuracy:  95.71%; precision:  74.73%; recall:  74.07%; FB1:  74.40
+
+2020-11-17 22:33:43,426 - log\train.log - INFO -  : accuracy:  93.74%; precision:  65.22%; recall:  64.92%; FB1:  65.07  437
+
+2020-11-17 22:33:43,428 - log\train.log - INFO - Cause: accuracy:  70.13%; precision:  82.67%; recall:  79.74%; FB1:  81.18  300
+
+2020-11-17 22:33:43,428 - log\train.log - INFO - Effect: accuracy:  77.83%; precision:  84.97%; recall:  87.50%; FB1:  86.22  173
+
+2020-11-17 22:33:43,430 - log\train.log - INFO - evaluate:test
+2022-02-18 15:07:15,954 - train.log - INFO - Reading model parameters from ckpt\ner.ckpt-238
+2022-02-18 15:12:31,758 - train.log - INFO - Reading model parameters from ckpt\ner.ckpt-238
+2022-02-18 15:12:49,059 - train.log - INFO - Reading model parameters from ckpt\ner.ckpt-238
+2022-02-18 15:12:49,059 - train.log - INFO - Reading model parameters from ckpt\ner.ckpt-238
+2022-02-27 19:53:14,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:54:46,070 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:54:46,070 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:55:26,791 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:55:26,791 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:55:26,791 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 19:56:33,536 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:05:15,277 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:05:15,277 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:06:20,864 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:07:06,597 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:08:37,935 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:08:37,935 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:11:56,760 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:14:39,539 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:16:00,125 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:16:00,125 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 20:17:21,513 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-27 21:25:26,990 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 19:33:25,369 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 19:33:51,554 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 19:33:51,554 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 19:35:49,386 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:02:29,197 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:05:36,245 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:07:30,287 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:07:30,287 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:08:36,667 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:08:36,667 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:08:36,667 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:12:24,669 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:14:43,616 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:15:16,650 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-02-28 21:15:16,650 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-03 19:02:30,046 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-05 15:23:54,391 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-05 15:27:18,964 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-05 15:27:18,964 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-05 15:30:25,820 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-05 15:34:37,462 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-09 16:58:49,874 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-09 17:00:03,830 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-09 17:00:03,830 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 15:24:48,608 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 15:25:08,818 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 15:25:08,818 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:05:12,091 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:05:12,091 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:05:12,091 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:07:14,553 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:07:14,553 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:07:14,553 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:07:14,553 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:08:24,750 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:08:24,750 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:08:24,750 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:08:24,750 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:08:24,750 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:12:19,884 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:26:46,013 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:27:34,368 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:29:12,485 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:30:09,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:23,184 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:37:55,281 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:56:31,911 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:57:48,681 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 21:58:33,106 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:02,045 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-20 22:00:31,315 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:41:19,352 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:41:34,462 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:41:34,462 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:58:37,451 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:58:37,451 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:58:37,451 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 12:59:27,641 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 13:00:09,151 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 14:55:12,239 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 14:56:32,844 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 14:56:32,844 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:04:40,863 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:07:56,204 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:08:22,718 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:08:22,718 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:09:16,461 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:10:29,017 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:10:29,017 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:10:50,692 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:11:31,584 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:11:58,154 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:11:58,154 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:12:58,626 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:12:58,626 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:12:58,626 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:15:11,380 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:16:32,932 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:18:07,914 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:20:02,501 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:22:08,730 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:23:49,118 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:26:19,072 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:26:37,700 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-21 15:26:37,700 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-03-24 21:30:28,722 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 10:20:35,619 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 10:20:35,619 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 10:21:31,294 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 10:21:31,294 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 10:21:31,294 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 11:02:12,565 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 11:02:12,565 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 11:02:12,565 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 11:02:12,565 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000
+2022-04-03 17:20:41,356 - deep_model/train.log - INFO - Reading model parameters from deep_model/ckpt\ner.ckpt-2000

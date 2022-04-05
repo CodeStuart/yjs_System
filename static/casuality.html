@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <!-- 引入 layui.js -->
+    <script src="../layui/layui.js"></script>
+
+    <!--引入element样式文件-->
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+    <!--引入vue-->
+    <script src="../js/vue.js"></script>
+    <!--引入element js文件-->
+    <script src="../element-ui/lib/index.js"></script>
+    <!--引入axios-->
+    <script src="../js/axios-0.18.0.js"></script>
+    <!--引入jquery-->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/echarts.js"></script>
+
+</head>
+<body>
+<div id="wzjBlock">
+    <div style="text-align:center">
+        <p style="font-size:20px">输入事件:
+            <input type="text" id="casuality_sentence"></input>
+            <button type="button" onclick="casuality_send()" style="text-align:center">提交</button>
+        </p>
+    </div>
+    <el-row>
+        <el-col :span="6" :offset="2">
+            <div style="float: left;">
+                <div style="
+            width:600px; height:550px; float:left; display:inline;
+            background-color: #fdf4ff;
+            border:solid 5px white;
+            " id="cau_ex">
+                    <h4 style="text-align:center">&nbsp &nbsp 因事件为中心节点：</h4>
+                </div>
+            </div>
+
+        </el-col>
+        <el-col :span="6" :offset="2">
+            <div style="width:500px; height:550px; float:left;
+		display:inline ;background-color: #fdf4ff;border:solid 5px white;
+         " id="eff_ex">
+                <h4 style="text-align:center">&nbsp &nbsp 果事件为中心节点：</h4>
+            </div>
+        </el-col>
+        <el-col :span="6" :offset="2">
+            <div style="text-align:center">
+                <p style="text-align:center;font-size:20px">
+                    因果事件数据展示：
+                </p>
+                <br>
+                <textarea id="casuality_textarea" rows="10" cols="60" style="display:block;margin:0 auto"> </textarea>
+                <br>
+            </div>
+        </el-col>
+    </el-row>
+
+
+</div>
+</body>
+</html>
+<script>
+    vm = new Vue({
+        el: "#wzjBlock",
+        data: {}
+    });
+</script>
+</html>

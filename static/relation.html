@@ -1,0 +1,47 @@
+<div>
+	<div style="text-align:center">
+		<p style="font-size:20px">输入事件:
+			<input type="text" id="casuality_sentence"></input>
+			<button type="button" onclick="casuality_send()" style="text-align:center">提交</button>
+		</p>
+		<span>
+			推荐搜索:
+		</span>
+		<a href="#" onclick="document.getElementById('casuality_sentence').value = '行政处罚'">行政处罚</a>
+		<a href="#" onclick="document.getElementById('casuality_sentence').value = '停产'">停产</a>
+		<a href="#" onclick="document.getElementById('casuality_sentence').value = '造假'">造假</a>
+	</div>
+
+	<div style="display:block;">
+		<div style="text-align:center">
+		<h4 style="text-align:left;width:500px;display:inline;">&nbsp &nbsp 因事件为中心节点：</h4>
+		<h4 style="text-align:right;width:500px;display:inline;">&nbsp &nbsp 果事件为中心节点：</h4>
+		</div>
+		<div style="
+            width:590px; height:550px; float:left; display:inline;
+            background-color: #fdf4ff;
+            border:solid 5px white;
+            "id="cau_ex">
+		</div>
+
+
+		<div style="width:580px; height:550px; float:left;
+		display:inline ;background-color: #fdf4ff;border:solid 5px white;
+         "id="eff_ex">
+
+		</div>
+	</div>
+
+        <br>
+        <br>
+
+	<div style="text-align:center">
+		<p style="text-align:center;font-size:20px">
+        因果事件数据展示：
+		</p>
+        <br>
+        <textarea id="casuality_textarea" rows="10" cols="60"  style="display:block;margin:0 auto;width:1160px; height:550px;style=font-size:1000px"> </textarea>
+        <br>
+	</div>
+
+</div>

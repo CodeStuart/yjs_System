@@ -1,0 +1,18 @@
+<div>
+	<div style="text-align:center">
+		<p style="font-size:20px">输入事件:
+			<input type="text" id="relation_sentence"></input>
+			<button type="button" onclick="relation_send()" style="text-align:center">提交</button>
+		</p>
+	</div>
+        <br>
+        <br>
+		<p style="text-align:center;font-size:20px">
+        因果事件网络
+		</p>
+        <br>
+        <textarea id="relation_textarea" rows="10" cols="60"  style="display:block;margin:0 auto"> </textarea>
+        <br>
+
+    <div id="relation_ball"></div>
+</div>

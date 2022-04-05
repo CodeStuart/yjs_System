@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+        .fileinput-button {
+            position: relative;
+            display: inline-block;
+        }
+
+        .fileinput-button input{
+            position: relative;
+            right: 0px;
+            top: 0px;
+            display: inline-block;
+        }
+</style>
+<body>
+<div>
+    <p style="text-align:center">请输入需要抽取的数据集:
+        <br>
+        <span class="fileinput-button">
+            <input type="file" id ="entity_file" style="width:200px;">
+            <button type="button" onclick="entityfile_send()" id="run">提交</button>
+            <button type="button" onclick="entityfile_test()" id="entity_test">测试用例</button>
+        </span>
+
+    <br>展示：
+        <br>
+        <textarea id="entity_table" rows="10" cols="60" style="width:1180px;height:500px;"> </textarea>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"
+                  style="width:180px;">0.00%
+            </div>
+        </div>
+    <br>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="text-align:center">请输入需要抽取的文本:
+        <input type="text" id ="entity_text">
+        <button type="button" onclick="entity_send()">提交</button>
+    <br>抽取结果：
+    <br>
+    <div id="entity_textarea" style="text-align:center"> </div>
+    <br>
+    <br>
+
+
+</div>
+</body>

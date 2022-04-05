@@ -1,0 +1,17 @@
+<div>
+    <p>请输入需要查询的对象:
+        <input type="text" id="gaoguan_sentence" title="已知高管信息，请选择高管，否则，请选择公司">
+
+        <br>
+    <p>查询方式：&nbsp;&nbsp;高管<input type="radio" name="names" value="gaoguanname" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司<input type="radio" name="names" value="companyname">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" onclick="gaoguan_send()">提交</button>
+    </p>
+    <br>
+    抽取结果：
+    <br>
+    <textarea id="gaoguan_textarea" rows="20" cols="60"> </textarea>
+    <div id="relation_ball"></div>
+</div>
